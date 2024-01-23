@@ -1,3 +1,5 @@
 # formation-github-actions
 
-à venir
+- Continuous Integration
+- Continuous Delivery
+- Continuous Deployment
