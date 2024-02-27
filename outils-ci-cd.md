@@ -47,15 +47,15 @@ L'orchestration assure que ces conteneurs s'exécutent là où ils sont nécessa
 - **Kubernetes** : Système d'orchestration de conteneurs open source. [Site officiel](https://kubernetes.io/)
 - **Docker Swarm** : Outil de gestion de cluster pour Docker. [Site officiel](https://docs.docker.com/engine/swarm/)
 
-### Surveillance et Logging
+### Monitoring et Logging
 
-La surveillance et le logging sont deux aspects cruciaux dans la gestion des applications modernes, fournissant une vision claire de leur état et de leur performance en temps réel. 
+Le monitoring et le logging sont deux aspects cruciaux dans la gestion des applications modernes, fournissant une vision claire de leur état et de leur performance en temps réel. 
 
-La **surveillance** consiste à observer en continu les opérations d'une application pour détecter toute anomalie ou performance dégradée, permettant ainsi d'intervenir rapidement en cas de problème. Elle couvre divers indicateurs, comme l'utilisation des ressources (CPU, mémoire, disque), le trafic réseau, ou encore les temps de réponse des services.
+Le **monitoring** consiste à observer en continu les opérations d'une application pour détecter toute anomalie ou performance dégradée, permettant ainsi d'intervenir rapidement en cas de problème. Il couvre divers indicateurs, comme l'utilisation des ressources (CPU, mémoire, disque), le trafic réseau, ou encore les temps de réponse des services.
 
 Le **logging**, de son côté, implique la collecte et l'enregistrement des événements générés par une application. Cela inclut tout, des messages d'erreur aux transactions utilisateur, en passant par les activités systèmes internes. Ces journaux sont essentiels pour le diagnostic des problèmes, l'audit de sécurité, ou encore l'analyse des comportements des utilisateurs. Ils servent de base pour analyser le passé et comprendre comment les incidents se sont produits, facilitant ainsi leur résolution et la prévention des récurrences.
 
-Ensemble, la surveillance et le logging permettent non seulement de garantir le bon fonctionnement et la disponibilité des applications mais aussi d'optimiser leur performance et leur sécurité. Ils jouent un rôle clé dans les stratégies de maintenance proactive et dans l'amélioration continue des services déployés.
+Ensemble, le monitoring et le logging permettent non seulement de garantir le bon fonctionnement et la disponibilité des applications mais aussi d'optimiser leur performance et leur sécurité. Ils jouent un rôle clé dans les stratégies de maintenance proactive et dans l'amélioration continue des services déployés.
 
 - **Prometheus** : Système de surveillance et d'alerte. [Site officiel](https://prometheus.io/)
 - **Grafana** : Plateforme d'analyse et de visualisation de données. [Site officiel](https://grafana.com/)
