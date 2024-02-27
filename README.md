@@ -1,6 +1,6 @@
 # Formation GitHub Actions 
 
-## Module 1 : Introduction aux Fondamentaux
+## [Module 1 : Introduction aux Fondamentaux](./introduction-ci-cd.md)
 ### 1.1. Introduction à la CI/CD
 ### 1.2. Vue d'ensemble des outils de CI/CD
 
