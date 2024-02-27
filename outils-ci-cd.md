@@ -63,7 +63,13 @@ Ensemble, la surveillance et le logging permettent non seulement de garantir le 
 
 ### Gestion de Versions Sémantiques (SemVer)
 
-Le Semantic Versioning (SemVer) offre un cadre pour la gestion des versions de logiciels, facilitant la compréhension de l'impact des modifications apportées.
+Le Semantic Versioning, ou SemVer, est une méthode standardisée pour attribuer des numéros de version aux logiciels dans le but de communiquer clairement l'impact des modifications apportées à chaque nouvelle sortie. Cette approche définit un format de versionnement en trois parties : `MAJEUR.MINEUR.CORRECTIF`, où :
+
+- **MAJEUR** indique une version qui a introduit des changements incompatibles avec les versions antérieures, nécessitant une adaptation de la part de l'utilisateur du logiciel.
+- **MINEUR** désigne l'ajout de nouvelles fonctionnalités qui restent compatibles avec les versions précédentes, enrichissant le logiciel sans perturber son utilisation courante.
+- **CORRECTIF** concerne les modifications qui corrigent des bugs ou des erreurs du logiciel sans ajouter de nouvelles fonctionnalités ni en modifier le fonctionnement existant de manière significative.
+
+SemVer aide les développeurs et les utilisateurs à comprendre immédiatement la nature et l'ampleur des modifications apportées à chaque mise à jour, facilitant ainsi la gestion des dépendances et la maintenance des logiciels. En suivant ces règles, les équipes peuvent éviter les conflits de version et s'assurer que les mises à jour de logiciels sont faites de manière prévisible et cohérente, réduisant le risque d'incompatibilité et simplifiant le processus d'intégration des nouvelles versions.
 
 - **Site officiel** : [Semantic Versioning](https://semver.org/)
 
