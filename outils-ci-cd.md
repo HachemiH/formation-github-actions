@@ -38,8 +38,11 @@ En somme, les outils de livraison et de déploiement continu transforment la man
 - **Docker** : Plateforme de conteneurisation. [Site officiel](https://www.docker.com/)
 
 ### Orchestration de Conteneurs
+L'orchestration de conteneurs, c'est un peu comme diriger un orchestre, mais au lieu de musiciens, on a des conteneurs, qui sont des unités logicielles légères contenant tout le nécessaire pour exécuter une application. Imaginons un événement important, comme le discours du Président Macron annonçant de nouvelles mesures de vaccination(situation totalement fictive), qui entraîne un afflux massif de citoyens souhaitant prendre rendez-vous sur Doctolib. Face à cette demande soudaine et élevée, il est crucial que Doctolib puisse répondre efficacement sans ralentissement ni interruption.
 
-L'orchestration de conteneurs aide à gérer la vie et l'interaction des conteneurs dans des environnements de production, optimisant leur déploiement et leur mise à l'échelle.
+C'est là qu'intervient l'orchestration de conteneurs. Elle permet à Doctolib de "dupliquer" automatiquement l'application (comme créer des copies d'un musicien dans notre orchestre) en lançant des conteneurs supplémentaires pour gérer la charge accrue. Ces conteneurs supplémentaires sont comme des musiciens additionnels appelés en renfort pour un grand concert, permettant à l'orchestre (l'application) de jouer sans faiblir face à une audience plus grande (les utilisateurs supplémentaires). 
+
+L'orchestration assure que ces conteneurs s'exécutent là où ils sont nécessaires, gère leur communication, leur déploiement, et leur mise à l'échelle automatique. Ainsi, si la demande augmente, elle peut automatiquement lancer plus de conteneurs, et inversement, les réduire lorsque la demande diminue. Cela garantit que l'application reste disponible et performante, peu importe le nombre de personnes essayant d'accéder au service simultanément, tout comme un orchestre bien dirigé assure une performance harmonieuse, quel que soit le nombre d'auditeurs.
 
 - **Kubernetes** : Système d'orchestration de conteneurs open source. [Site officiel](https://kubernetes.io/)
 - **Docker Swarm** : Outil de gestion de cluster pour Docker. [Site officiel](https://docs.docker.com/engine/swarm/)
