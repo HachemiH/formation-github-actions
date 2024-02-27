@@ -1,4 +1,3 @@
-
 # Introduction à la CI/CD 
 
 Imaginons que nous préparons un grand repas de famille. Ce repas représente notre projet d'application web, avec toutes ses composantes : l'API, la base de données, et le front-end. Comme dans tout grand repas, il y a plusieurs étapes clés : la planification, la préparation, la cuisson, le dressage des plats, et enfin, le service aux invités. Dans cette analogie, ces étapes représentent les différents aspects de la pipeline CI/CD et le rôle essentiel de Git dans ce processus.
