@@ -12,7 +12,12 @@ La gestion de version est essentielle pour suivre et contrôler les modification
 
 ### Serveurs d'Intégration Continue (CI)
 
-Les serveurs d'intégration continue automatisent la compilation, le test et l'intégration du code source. Ils facilitent la détection précoce des problèmes et améliorent la qualité du code.
+Les serveurs d'intégration continue sont des systèmes automatisés qui jouent un rôle crucial dans le développement logiciel moderne. Leur fonction principale est de prendre en charge la compilation automatique du code source dès qu'il est soumis (ou "committé") dans un dépôt de versionnage comme Git. Mais leur rôle ne s'arrête pas là : ils exécutent également une série de tests automatisés sur ce code pour vérifier qu'il fonctionne comme prévu et qu'il ne casse pas les fonctionnalités existantes.
+
+Les serveurs de CI utilisent souvent des conteneurs ou des machines virtuelles pour créer des environnements d'exécution isolés où chaque test ou tâche est exécuté. Cela garantit que les tests s'exécutent dans un environnement propre et contrôlé, simulant de près l'environnement de production sans interférer avec les autres tâches ou nécessiter une configuration manuelle prolongée.
+
+En intégrant et en testant le code source de manière continue, ces serveurs facilitent la détection précoce des problèmes, permettant aux équipes de développement de les résoudre rapidement avant qu'ils n'escaladent ou affectent d'autres parties du projet. Cela contribue non seulement à maintenir la qualité du code à un niveau élevé, mais aussi à accélérer le cycle de développement en réduisant les retards causés par la correction de bugs complexes découverts tardivement dans le cycle de vie du développement.
+
 
 - **Jenkins** : Serveur d'intégration continue open source. [Site officiel](https://www.jenkins.io/)
 - **GitLab CI** : Outil CI/CD intégré à GitLab. [Site officiel](https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/)
