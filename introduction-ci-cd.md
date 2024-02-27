@@ -2,7 +2,7 @@
 
 Imaginons que nous préparons un grand repas de famille. Ce repas représente notre projet d'application web, avec toutes ses composantes : l'API, la base de données, et le front-end. Comme dans tout grand repas, il y a plusieurs étapes clés : la planification, la préparation, la cuisson, le dressage des plats, et enfin, le service aux invités. Dans cette analogie, ces étapes représentent les différents aspects de la pipeline CI/CD et le rôle essentiel de Git dans ce processus.
 
-## Planification : L'Importance de Git
+## Planification : L'Importance de la planification
 
 Avant même de commencer à cuisiner notre grand repas de famille, la première étape essentielle est la planification, qui s'apparente à la création d'une liste de courses détaillée. Cela équivaut à l'utilisation d'outils de gestion de projet comme Jira, où chaque tâche de notre projet est méticuleusement listée et planifiée, comme les ingrédients nécessaires pour chaque plat de notre repas. Cette étape implique de définir des tickets pour chaque fonctionnalité ou correction, attribuer ces tâches aux membres de l'équipe, et suivre leur avancement. De cette manière, chaque aspect de notre application est pris en compte, assurant que chaque membre sait précisément quelles tâches il doit accomplir pour contribuer au succès du projet. C'est comme s'assurer que chaque ingrédient nécessaire pour le repas est sur notre liste de courses et que chaque personne impliquée sait quels ingrédients elle doit apporter ou préparer.
 
