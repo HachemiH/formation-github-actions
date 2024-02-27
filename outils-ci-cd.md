@@ -27,7 +27,11 @@ En intégrant et en testant le code source de manière continue, ces serveurs fa
 
 ### Livraison et Déploiement Continu (CD)
 
-Les outils de livraison et de déploiement continu automatisent la mise en production du logiciel, permettant des déploiements rapides et fiables.
+Les outils de livraison et de déploiement continu sont conçus pour automatiser et optimiser le processus de mise en production d'un logiciel. Ils jouent un rôle crucial en facilitant des déploiements rapides, fiables, et sécurisés. 
+
+En pratique, cela signifie que dès qu'une modification du code est validée et prête à être déployée, ces outils prennent le relais pour transporter le code depuis l'environnement de développement ou de test vers l'environnement de production. Cette automatisation réduit significativement le risque d'erreurs humaines, assure une cohérence dans le processus de déploiement, et permet aux équipes de se concentrer sur d'autres tâches critiques sans être retardées par des processus de déploiement manuels et répétitifs. 
+
+En somme, les outils de livraison et de déploiement continu transforment la manière dont les logiciels sont développés et déployés, rendant possible la livraison de nouvelles fonctionnalités et correctifs aux utilisateurs finaux avec une efficacité et une rapidité inégalées.
 
 - **Spinnaker** : Plateforme open source de livraison continue. [Site officiel](https://spinnaker.io/)
 - **Argo CD** : Outil de déploiement continu pour Kubernetes. [Site officiel](https://argoproj.github.io/argo-cd/)
