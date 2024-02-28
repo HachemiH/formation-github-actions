@@ -78,7 +78,7 @@ Elles sont comparables à des outils spécialisés ou des plugins que vous pouve
 
 - **Sources des Actions** :
   - **GitHub Marketplace** : Une plateforme où vous pouvez découvrir et utiliser des milliers d'actions développées par la communauté GitHub et par GitHub lui-même. Ces actions couvrent un large éventail de tâches et sont souvent maintenues et mises à jour par leurs créateurs.
-  - **Définitions Personnalisées** : Vous pouvez également créer vos propres actions spécifiques à vos besoins et les stocker dans votre dépôt. Cela vous permet d'adapter précisément les étapes d'un workflow à votre projet.
+  - **Actions Personnalisées** : Vous pouvez également créer vos propres actions spécifiques à vos besoins et les stocker dans votre dépôt. Cela vous permet d'adapter précisément les étapes d'un workflow à votre projet.
 
 Les actions simplifient la mise en œuvre des processus CI/CD en encapsulant des tâches complexes dans des modules réutilisables, réduisant le besoin de scripts volumineux et améliorant la lisibilité et la maintenance de vos workflows.
 
