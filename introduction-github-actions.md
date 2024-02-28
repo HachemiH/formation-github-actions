@@ -8,7 +8,7 @@ GitHub Actions est un outil d'automatisation puissant qui s'intègre parfaitemen
 L'écosystème GitHub englobe une large gamme de fonctionnalités et de services conçus pour soutenir le développement de logiciels, y compris :
 
 
-- [**Dépôts Git**](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories) : Au cœur de GitHub, permettant le stockage et la gestion de code source.
+- [**Dépôts Git**](https://docs.github.com/fr/repositories) : Au cœur de GitHub, permettant le stockage et la gestion de code source.
 - [**Pull Requests et Code Review**](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) : Facilitent la collaboration et l'amélioration du code entre les développeurs.
 - [**GitHub Issues**](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) : Un système de suivi pour signaler et suivre les bugs, les demandes de fonctionnalités et les tâches.
 - [**GitHub Pages**](https://pages.github.com/) : Permet de héberger gratuitement des sites web directement à partir d'un dépôt GitHub.
