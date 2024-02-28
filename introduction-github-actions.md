@@ -7,13 +7,13 @@ GitHub Actions est un outil d'automatisation puissant qui s'intègre parfaitemen
 
 L'écosystème GitHub englobe une large gamme de fonctionnalités et de services conçus pour soutenir le développement de logiciels, y compris :
 
-- **Dépôts Git** : Au cœur de GitHub, permettant le stockage et la gestion de code source.
-- **Pull Requests et Code Review** : Facilitent la collaboration et l'amélioration du code entre les développeurs.
-- **GitHub Issues** : Un système de suivi pour signaler et suivre les bugs, les demandes de fonctionnalités et les tâches.
-- **GitHub Pages** : Permet de héberger gratuitement des sites web directement à partir d'un dépôt GitHub.
-- **GitHub Marketplace** : Un marché pour trouver et partager des outils et des services qui se connectent à GitHub, y compris des actions personnalisées pour GitHub Actions.
-- **GitHub Security** : Des fonctionnalités comme le scanning de vulnérabilités et les advisories pour améliorer la sécurité des projets.
 
+- [**Dépôts Git**](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories) : Au cœur de GitHub, permettant le stockage et la gestion de code source.
+- [**Pull Requests et Code Review**](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) : Facilitent la collaboration et l'amélioration du code entre les développeurs.
+- [**GitHub Issues**](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) : Un système de suivi pour signaler et suivre les bugs, les demandes de fonctionnalités et les tâches.
+- [**GitHub Pages**](https://pages.github.com/) : Permet de héberger gratuitement des sites web directement à partir d'un dépôt GitHub.
+- [**GitHub Marketplace**](https://github.com/marketplace) : Un marché pour trouver et partager des outils et des services qui se connectent à GitHub, y compris des actions personnalisées pour GitHub Actions.
+- [**GitHub Security**](https://github.com/features/security) : Des fonctionnalités comme le scanning de vulnérabilités et les advisories pour améliorer la sécurité des projets.
 ## 2.1.2 Intégration de GitHub Actions
 
 GitHub Actions s'intègre de manière fluide dans cet écosystème, en tirant parti des fonctionnalités existantes de GitHub pour automatiser les workflows de développement. Par exemple :
