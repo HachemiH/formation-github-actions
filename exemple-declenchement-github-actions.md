@@ -1,4 +1,4 @@
-# Module 3.3 : Automatisation d'une Réponse à une Issue avec GitHub Actions
+# Module 3.3 : Exemple d'Automatisation d'une Réponse à une Issue avec GitHub Actions
 
 Ce module vous apprendra comment configurer un workflow GitHub Actions pour automatiser une réponse à une issue. Ce processus met en œuvre des déclencheurs d'événements pour activer le workflow, illustrant un cas d'usage pratique de GitHub Actions.
 
