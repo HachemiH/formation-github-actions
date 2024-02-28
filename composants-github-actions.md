@@ -2,7 +2,12 @@
 
 GitHub Actions est un outil puissant de CI/CD intégré à l'écosystème GitHub. Il permet aux développeurs d'automatiser leurs workflows de développement logiciel directement depuis leurs dépôts GitHub. Pour comprendre comment GitHub Actions fonctionne, il est essentiel de se familiariser avec ses composants de base : workflows, jobs, steps, actions, et runners.
 
-## 2.2.1 Diagramme en Arborescence des Composants
+
+## 2.2.1 Configuration des Workflows avec des Fichiers YAML
+
+Les workflows de GitHub Actions sont configurés à l'aide de fichiers YAML (*.yml ou *.yaml), un format de sérialisation de données lisible par l'homme, conçu pour être simple et clair. Ces fichiers YAML décrivent les étapes précises que les workflows doivent exécuter, y compris les conditions de déclenchement, les jobs, les actions à utiliser, les environnements d'exécution (runners), et toute autre configuration nécessaire.
+
+## 2.2.2 Diagramme en Arborescence des Composants
 
 ```md
 GitHub Actions
@@ -19,7 +24,7 @@ GitHub Actions
 └── GitHub Marketplace (pour trouver des actions)
 ```
 
-### 2.2.2 Workflows
+### 2.2.3 Workflows
 
 Les **workflows**, dans le contexte de GitHub Actions, sont essentiellement des recettes ou des plans d'action que vous créez pour automatiser certaines tâches au sein de votre projet GitHub. Imaginez les workflows comme des scripts ou des séquences d'instructions qui s'exécutent automatiquement en réponse à des événements spécifiques au sein de votre dépôt. Ces événements peuvent être, par exemple, un `push` de code nouveau ou mis à jour vers le dépôt, une `pull_request` pour demander l'intégration de modifications, ou encore des déclencheurs basés sur une programmation horaire (`schedule`), parmi d'autres.
 
@@ -27,20 +32,22 @@ Un workflow se compose de `jobs`, qui sont des groupes d'étapes ou de tâches q
 
 Pour créer un workflow, vous écrivez un fichier YAML qui décrit les événements déclencheurs, les jobs à exécuter, et les étapes spécifiques de chaque job. Ce fichier YAML est ensuite placé dans un répertoire spécifique de votre dépôt GitHub (`.github/workflows`), où GitHub Actions peut le trouver et l'utiliser pour exécuter vos workflows automatiquement en réponse aux événements définis.
 
-### 2.2.3 Jobs
+### 2.2.4 Jobs
 
 Les **jobs** sont des groupes de **steps** qui s'exécutent sur le même runner. Ils peuvent s'exécuter en parallèle ou séquentiellement, selon leur configuration dans le workflow.
 
-### 2.2.4 Steps
+### 2.2.5 Steps
 
 Les **steps** sont les tâches individuelles qui s'exécutent dans un job. Un step peut exécuter une commande shell ou utiliser une **action**.
 
-### 2.2.5 Actions
+### 2.2.6 Actions
 
 Les **actions** sont des ensembles de tâches préemballées que vous pouvez utiliser dans vos steps. Elles peuvent être trouvées sur le **GitHub Marketplace** ou définies dans votre dépôt.
 
-### 2.2.6 Runners
+### 2.2.7 Runners
 
 Les **runners** sont des serveurs qui exécutent vos workflows. GitHub fournit des runners hébergés pour différents systèmes d'exploitation, ou vous pouvez configurer vos propres serveurs comme runners auto-hébergés.
 
 Cette structure clarifie la manière dont les différents composants de GitHub Actions interagissent pour automatiser les processus de développement, de la définition du workflow jusqu'à l'exécution des tâches sur des runners.
+
+
