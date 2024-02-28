@@ -86,6 +86,17 @@ Les actions simplifient la mise en œuvre des processus CI/CD en encapsulant des
 
 Les **runners** sont des serveurs qui exécutent vos workflows. GitHub fournit des runners hébergés pour différents systèmes d'exploitation, ou vous pouvez configurer vos propres serveurs comme runners auto-hébergés.
 
+Ils fonctionnent comme des ouvriers spécialisés chargés d'exécuter les tâches que vous avez définies dans vos workflows. Imaginez une équipe de construction où chaque membre a une compétence unique ; de la même façon, les runners prennent en charge l'exécution des jobs que vous avez spécifiés, chaque runner pouvant être spécialisé dans un environnement d'exploitation particulier.
+
+### 2 types de Runners
+
+- **Hébergés par GitHub** : GitHub propose des runners préconfigurés pour les systèmes d'exploitation courants (Linux, Windows, macOS). Ces runners hébergés sont gérés par GitHub, ce qui signifie que vous n'avez pas à vous soucier de leur maintenance ou de leur mise à jour. Ils sont prêts à l'emploi et peuvent être utilisés dès que vous activez GitHub Actions dans votre dépôt.
+
+- **Auto-hébergés** : Pour les cas où vous avez besoin d'un contrôle plus approfondi sur l'environnement d'exécution, par exemple pour des exigences spécifiques de sécurité ou d'utilisation de ressources, GitHub Actions vous permet de configurer vos propres serveurs comme runners. Cela vous donne la flexibilité de personnaliser l'environnement selon les besoins de votre projet, tout en gardant la facilité d'utilisation des workflows GitHub Actions.
+
+
+En fournissant à la fois des options de runners hébergés et la possibilité de configurer des runners auto-hébergés, GitHub Actions offre une flexibilité maximale pour répondre à différents besoins d'exécution de workflow, que ce soit pour des projets simples ou pour des infrastructures complexes nécessitant des configurations personnalisées.
+
 Cette structure clarifie la manière dont les différents composants de GitHub Actions interagissent pour automatiser les processus de développement, de la définition du workflow jusqu'à l'exécution des tâches sur des runners.
 
 
