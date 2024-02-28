@@ -10,7 +10,7 @@ L'écosystème GitHub englobe une large gamme de fonctionnalités et de services
 
 - [**Dépôts Git**](https://docs.github.com/fr/repositories) : Au cœur de GitHub, permettant le stockage et la gestion de code source.
 - [**Pull Requests et Code Review**](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) : Facilitent la collaboration et l'amélioration du code entre les développeurs.
-- [**GitHub Issues**](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) : Un système de suivi pour signaler et suivre les bugs, les demandes de fonctionnalités et les tâches.
+- [**GitHub Issues**](https://docs.github.com/fr/issues/tracking-your-work-with-issues/about-issues) : Un système de suivi pour signaler et suivre les bugs, les demandes de fonctionnalités et les tâches.
 - [**GitHub Pages**](https://pages.github.com/) : Permet de héberger gratuitement des sites web directement à partir d'un dépôt GitHub.
 - [**GitHub Marketplace**](https://github.com/marketplace) : Un marché pour trouver et partager des outils et des services qui se connectent à GitHub, y compris des actions personnalisées pour GitHub Actions.
 - [**GitHub Security**](https://github.com/features/security) : Des fonctionnalités comme le scanning de vulnérabilités et les advisories pour améliorer la sécurité des projets.
