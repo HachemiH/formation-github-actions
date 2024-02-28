@@ -70,6 +70,18 @@ Les steps sont essentiels pour décomposer les jobs en tâches gérables, permet
 
 Les **actions** sont des ensembles de tâches préemballées que vous pouvez utiliser dans vos steps. Elles peuvent être trouvées sur le **GitHub Marketplace** ou définies dans votre dépôt.
 
+Elles sont comparables à des outils spécialisés ou des plugins que vous pouvez incorporer dans vos workflows pour accomplir des tâches spécifiques sans avoir à réécrire le code à chaque fois. Elles représentent des blocs de construction réutilisables conçus pour étendre les fonctionnalités de vos workflows, en facilitant l'exécution de tâches communes ou complexes, telles que le déploiement d'une application, la gestion des versions, ou l'envoi de notifications.
+
+### Approfondissement des Actions
+
+- **Réutilisabilité** : Les actions sont conçues pour être réutilisées dans différents workflows. Vous pouvez les voir comme des briques LEGO® ; chaque action offre une fonctionnalité spécifique, et vous pouvez les assembler pour construire le processus d'intégration et de déploiement qui correspond à vos besoins.
+
+- **Sources des Actions** :
+  - **GitHub Marketplace** : Une plateforme où vous pouvez découvrir et utiliser des milliers d'actions développées par la communauté GitHub et par GitHub lui-même. Ces actions couvrent un large éventail de tâches et sont souvent maintenues et mises à jour par leurs créateurs.
+  - **Définitions Personnalisées** : Vous pouvez également créer vos propres actions spécifiques à vos besoins et les stocker dans votre dépôt. Cela vous permet d'adapter précisément les étapes d'un workflow à votre projet.
+
+Les actions simplifient la mise en œuvre des processus CI/CD en encapsulant des tâches complexes dans des modules réutilisables, réduisant le besoin de scripts volumineux et améliorant la lisibilité et la maintenance de vos workflows.
+
 ### 2.2.7 Runners
 
 Les **runners** sont des serveurs qui exécutent vos workflows. GitHub fournit des runners hébergés pour différents systèmes d'exploitation, ou vous pouvez configurer vos propres serveurs comme runners auto-hébergés.
