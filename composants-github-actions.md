@@ -36,6 +36,19 @@ Pour créer un workflow, vous écrivez un fichier YAML qui décrit les événeme
 
 Les **jobs** sont des groupes de **steps** qui s'exécutent sur le même runner. Ils peuvent s'exécuter en parallèle ou séquentiellement, selon leur configuration dans le workflow.
 
+Dans GitHub Actions ce sont essentiellement des tâches ou des ensembles d'opérations que vous souhaitez exécuter dans le cadre de votre workflow. Vous pouvez les voir comme des "missions" spécifiques attribuées à des "agents" (les runners), où chaque job contient une série d'étapes ou de commandes à accomplir. Ces étapes peuvent inclure des tâches comme la construction de votre code, l'exécution de tests, ou le déploiement d'une application.
+
+#### Comprendre les Jobs dans GitHub Actions
+
+- **Groupement de Tâches** : Un job regroupe logiquement des étapes qui accomplissent un objectif commun. Par exemple, un job peut être dédié à la construction de votre application, tandis qu'un autre pourrait se concentrer sur l'exécution de tests automatisés.
+  
+- **Exécution sur des Runners** : Les jobs s'exécutent sur des runners, qui sont des serveurs ou des environnements virtuels mis à disposition par GitHub pour exécuter les actions et les commandes définies dans vos jobs. Chaque job démarre dans un environnement propre, garantissant que les tâches sont exécutées dans un contexte isolé et contrôlé.
+
+- **Configuration de l'Exécution** : Dans le fichier YAML de votre workflow, vous pouvez configurer vos jobs pour qu'ils s'exécutent en parallèle ou de manière séquentielle. L'exécution en parallèle peut accélérer le processus global de CI/CD en permettant à plusieurs tâches de se dérouler simultanément, tandis que l'exécution séquentielle est utile pour des tâches qui doivent être réalisées dans un ordre spécifique.
+
+
+Les jobs sont au cœur des workflows GitHub Actions, fournissant la structure nécessaire pour diviser vos processus d'intégration et de déploiement continus en tâches gérables et logiquement organisées. Cette structuration facilite non seulement la compréhension et la maintenance de vos workflows mais permet également une exécution plus efficace et flexible de vos pipelines CI/CD.
+
 ### 2.2.5 Steps
 
 Les **steps** sont les tâches individuelles qui s'exécutent dans un job. Un step peut exécuter une commande shell ou utiliser une **action**.
