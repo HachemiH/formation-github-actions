@@ -1,20 +1,21 @@
 # Formation GitHub Actions 
 
 ## Module 1 : Introduction aux Fondamentaux
-### [1.1. Introduction à la CI/CD](./introduction-ci-cd.md)
-### [1.2. Vue d'ensemble des principaux outils de CI/CD](./outils-ci-cd.md)
+### [1.1 Introduction à la CI/CD](./introduction-ci-cd.md)
+### [1.2 Vue d'ensemble des principaux outils de CI/CD](./outils-ci-cd.md)
 
 ---
 
 ## Module 2 : Premiers Pas avec GitHub Actions
-### [2.1. Qu'est-ce que GitHub Actions ?](./introduction-github-actions.md)
-### [2.2. Composants de base de GitHub Actions](./composants-github-actions.md)
+### [2.1 Qu'est-ce que GitHub Actions ?](./introduction-github-actions.md)
+### [2.2 Composants de base de GitHub Actions](./composants-github-actions.md)
 
 ---
 
 ## Module 3 : Configuration d'un Workflow GitHub Actions
-### [3.1. Création de votre premier Workflow](./creation-premier-worflow.md)
-### [3.2. Déclencheurs d'événements](./declencheurs-evenements-github-actions.md)
+### [3.1 Création de votre premier Workflow](./creation-premier-worflow.md)
+### [3.2 Déclencheurs d'événements](./declencheurs-evenements-github-actions.md)
+### [3.3 Exemple de déclenchement d'événements](./exemple-declenchement-github-actions.md)
 
 ---
 
