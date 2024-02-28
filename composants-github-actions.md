@@ -21,7 +21,11 @@ GitHub Actions
 
 ### 2.2.2 Workflows
 
-Les **workflows** sont des processus automatisés que vous définissez dans votre dépôt GitHub, déclenchés par des événements spécifiques, tels que `push`, `pull_request`, ou des planifications (`schedule`). Ils sont composés de **jobs**.
+Les **workflows**, dans le contexte de GitHub Actions, sont essentiellement des recettes ou des plans d'action que vous créez pour automatiser certaines tâches au sein de votre projet GitHub. Imaginez les workflows comme des scripts ou des séquences d'instructions qui s'exécutent automatiquement en réponse à des événements spécifiques au sein de votre dépôt. Ces événements peuvent être, par exemple, un `push` de code nouveau ou mis à jour vers le dépôt, une `pull_request` pour demander l'intégration de modifications, ou encore des déclencheurs basés sur une programmation horaire (`schedule`), parmi d'autres.
+
+Un workflow se compose de `jobs`, qui sont des groupes d'étapes ou de tâches qui s'exécutent sur la même machine virtuelle ou conteneur. Chaque job peut effectuer des tâches comme la construction d'une application, l'exécution de tests ou le déploiement d'un site web. Les jobs au sein d'un même workflow peuvent s'exécuter séquentiellement ou en parallèle, selon comment vous les configurez.
+
+Pour créer un workflow, vous écrivez un fichier YAML qui décrit les événements déclencheurs, les jobs à exécuter, et les étapes spécifiques de chaque job. Ce fichier YAML est ensuite placé dans un répertoire spécifique de votre dépôt GitHub (`.github/workflows`), où GitHub Actions peut le trouver et l'utiliser pour exécuter vos workflows automatiquement en réponse aux événements définis.
 
 ### 2.2.3 Jobs
 
