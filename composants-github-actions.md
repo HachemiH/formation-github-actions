@@ -53,7 +53,7 @@ Les jobs sont au cœur des workflows GitHub Actions, fournissant la structure n�
 
 Les **steps** sont les tâches individuelles qui s'exécutent dans un job. Un step peut exécuter une commande shell ou utiliser une **action**.
 
-Dans le contexte de GitHub Actions, sont les éléments constitutifs d'un job. Imaginez que chaque job est une recette de cuisine, et chaque **step** est une instruction ou une action spécifique nécessaire pour compléter cette recette. Ces étapes peuvent varier de simples commandes shell, comme vérifier la version d'un logiciel installé, à l'utilisation d'actions plus complexes disponibles dans le GitHub Marketplace, telles que déployer une application sur le cloud.
+Dans le contexte de GitHub Actions, ce sont les éléments constitutifs d'un job. Imaginez que chaque job est une recette de cuisine, et chaque **step** est une instruction ou une action spécifique nécessaire pour compléter cette recette. Ces étapes peuvent varier de simples commandes shell, comme vérifier la version d'un logiciel installé, à l'utilisation d'actions plus complexes disponibles dans le GitHub Marketplace, telles que déployer une application sur le cloud.
 
 #### Comprendre les Steps dans GitHub Actions
 
