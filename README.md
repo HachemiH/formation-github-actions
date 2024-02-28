@@ -7,7 +7,7 @@
 ---
 
 ## Module 2 : Premiers Pas avec GitHub Actions
-### 2.1. Qu'est-ce que GitHub Actions ?
+### [2.1. Qu'est-ce que GitHub Actions ?](./introduction-github-actions.md)
 ### 2.2. Composants de base de GitHub Actions
 
 ---
