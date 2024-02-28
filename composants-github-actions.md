@@ -53,6 +53,19 @@ Les jobs sont au cœur des workflows GitHub Actions, fournissant la structure n�
 
 Les **steps** sont les tâches individuelles qui s'exécutent dans un job. Un step peut exécuter une commande shell ou utiliser une **action**.
 
+Dans le contexte de GitHub Actions, sont les éléments constitutifs d'un job. Imaginez que chaque job est une recette de cuisine, et chaque **step** est une instruction ou une action spécifique nécessaire pour compléter cette recette. Ces étapes peuvent varier de simples commandes shell, comme vérifier la version d'un logiciel installé, à l'utilisation d'actions plus complexes disponibles dans le GitHub Marketplace, telles que déployer une application sur le cloud.
+
+#### Comprendre les Steps dans GitHub Actions
+
+- **Actions Individuelles** : Chaque step représente une action individuelle ou une commande qui doit être exécutée. Les steps sont exécutés séquentiellement, dans l'ordre où ils sont définis dans le fichier YAML de votre workflow.
+
+- **Types de Steps** :
+  - **Commandes Shell** : Vous pouvez écrire directement des commandes shell ou des scripts qui s'exécuteront sur le runner. C'est utile pour des tâches de préparation, comme la configuration de l'environnement ou la vérification des prérequis.
+  - **Actions** : Les actions sont des ensembles de commandes ou de scripts préemballés que vous pouvez réutiliser dans vos workflows. GitHub Marketplace offre une large gamme d'actions créées par la communauté et GitHub pour accomplir des tâches courantes, comme le déploiement sur AWS ou l'envoi de notifications Slack.
+
+Les steps sont essentiels pour décomposer les jobs en tâches gérables, permettant une structure claire et logique de votre pipeline CI/CD. En combinant diverses actions et commandes, vous pouvez créer des workflows puissants et flexibles qui répondent précisément aux besoins de votre projet.
+
+
 ### 2.2.6 Actions
 
 Les **actions** sont des ensembles de tâches préemballées que vous pouvez utiliser dans vos steps. Elles peuvent être trouvées sur le **GitHub Marketplace** ou définies dans votre dépôt.
