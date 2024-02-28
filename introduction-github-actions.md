@@ -14,6 +14,8 @@ L'écosystème GitHub englobe une large gamme de fonctionnalités et de services
 - [**GitHub Pages**](https://pages.github.com/) : Permet de héberger gratuitement des sites web directement à partir d'un dépôt GitHub.
 - [**GitHub Marketplace**](https://github.com/marketplace) : Un marché pour trouver et partager des outils et des services qui se connectent à GitHub, y compris des actions personnalisées pour GitHub Actions.
 - [**GitHub Security**](https://github.com/features/security) : Des fonctionnalités comme le scanning de vulnérabilités et les advisories pour améliorer la sécurité des projets.
+- [**Explore**](https://github.com/explore) : Découvrez les projets, collections, tendances, et ressources partagées par la communauté GitHub.
+
 ## 2.1.2 Intégration de GitHub Actions
 
 GitHub Actions s'intègre de manière fluide dans cet écosystème, en tirant parti des fonctionnalités existantes de GitHub pour automatiser les workflows de développement. Par exemple :
