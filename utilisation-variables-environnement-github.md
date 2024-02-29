@@ -19,6 +19,7 @@
   </ul>
 </blockquote>
 
+---
 
 Les variables d'environnement jouent un rôle crucial dans les workflows CI/CD en permettant la personnalisation des opérations sans modifier le code source. Elles sont particulièrement utiles pour gérer des configurations spécifiques à l'environnement, telles que des URL de base, des clés d'API, ou des configurations de connexion à des bases de données, qui peuvent varier entre les environnements de développement, de test, et de production.
 
