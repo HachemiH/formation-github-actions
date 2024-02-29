@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, l'apprenant sera en mesure de :</p>
+  <p>À la fin de ce module, vous serez en mesure de :</p>
   <ul>
     <li>Identifier les différents niveaux où les variables d'environnement peuvent être définies et utilisées dans GitHub Actions.</li>
     <li>Comprendre comment et pourquoi utiliser les variables d'environnement pour gérer la configuration de déploiement d'une application web sur un VPS.</li>
@@ -11,7 +11,7 @@
 </blockquote>
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Pour une compréhension optimale de ce module, les apprenants devraient posséder :</p>
+  <p>Pour une compréhension optimale de ce module, vous devrez posséder :</p>
   <ul>
     <li>Une compréhension de base de l'utilisation de GitHub et des principes de GitHub Actions.</li>
     <li>Des connaissances élémentaires sur les serveurs VPS et le processus de déploiement d'applications web.</li>
