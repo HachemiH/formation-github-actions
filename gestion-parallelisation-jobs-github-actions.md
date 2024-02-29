@@ -21,6 +21,55 @@ Pour tirer le meilleur parti de ce module, les apprenants devraient avoir :
 ```
 
 
+```diff
++ ## Objectif Pédagogique
++ À la fin de ce module, l'apprenant sera capable de :
++ - Comprendre et appliquer les principes de gestion des jobs...
++ - Concevoir des workflows optimisés par la parallélisation...
+```
+
+```diff
++ ## Prérequis
++ Pour tirer le meilleur parti de ce module, les apprenants devraient avoir :
++ - Une compréhension de base des concepts d'intégration continue (CI)...
++ - Une familiarité avec GitHub...
+```
+
+
+:bulb: ## Objectif Pédagogique
+
+À la fin de ce module, l'apprenant sera capable de :
+- Comprendre et appliquer les principes de gestion des jobs...
+- Concevoir des workflows optimisés par la parallélisation...
+
+:key: ## Prérequis
+
+Pour tirer le meilleur parti de ce module, les apprenants devraient avoir :
+- Une compréhension de base des concepts d'intégration continue (CI)...
+- Une familiarité avec GitHub...
+
+
+
+<blockquote>
+  <h2 style="color: green;">Objectif Pédagogique</h2>
+  <p>À la fin de ce module, l'apprenant sera capable de :</p>
+  <ul>
+    <li>Comprendre et appliquer les principes de gestion des jobs...</li>
+    <li>Concevoir des workflows optimisés par la parallélisation...</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <h2 style="color: green;">Prérequis</h2>
+  <p>Pour tirer le meilleur parti de ce module, les apprenants devraient avoir :</p>
+  <ul>
+    <li>Une compréhension de base des concepts d'intégration continue (CI)...</li>
+    <li>Une familiarité avec GitHub...</li>
+  </ul>
+</blockquote>
+
+
+
 ## Gestion des Jobs
 
 Dans un processus d'intégration et de déploiement continus (CI/CD), la gestion des jobs est essentielle pour orchestrer les différentes tâches nécessaires à la préparation et au déploiement d'une application. Un job peut être vu comme une unité de travail ou une tâche individuelle qui fait partie d'un ensemble plus vaste d'opérations dans un workflow.
