@@ -1,6 +1,6 @@
 # Gestion et Parallélisation des Jobs
 
-```
+```md
 ## Objectif Pédagogique
 
 À la fin de ce module, l'apprenant sera capable de :
