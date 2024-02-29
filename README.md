@@ -26,7 +26,7 @@
 ---
 
 ## Module 5 : Secrets et Variables d'Environnement
-### 5.1. Gérer les Secrets dans GitHub
+### [5.1. Gérer les Secrets dans GitHub](./gerer-secrets-github.md)
 ### 5.2. Utilisation des Variables d'Environnement
 
 ---
