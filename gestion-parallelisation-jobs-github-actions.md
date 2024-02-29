@@ -1,5 +1,26 @@
 # Gestion et Parallélisation des Jobs
 
+```
+## Objectif Pédagogique
+
+À la fin de ce module, l'apprenant sera capable de :
+
+- Comprendre et appliquer les principes de gestion des jobs dans un environnement CI/CD en utilisant GitHub Actions, en se concentrant sur la définition d'objectifs clairs pour chaque job et l'orchestration de ces jobs à travers des dépendances explicites.
+- Concevoir des workflows optimisés par la parallélisation des jobs et des tâches, en utilisant des matrices pour exécuter simultanément plusieurs instances d'un job dans différentes conditions, afin de réduire le temps total nécessaire à l'exécution du workflow.
+
+## Prérequis
+
+Pour tirer le meilleur parti de ce module, les apprenants devraient avoir :
+
+- Une compréhension de base des concepts d'intégration continue (CI) et de déploiement continu (CD).
+- Une familiarité avec GitHub, y compris la création et la gestion de dépôts.
+- Des connaissances de base en YAML et en scripting, pour la rédaction et la configuration de workflows GitHub Actions.
+- Une expérience préalable en développement logiciel, notamment en ce qui concerne le processus de construction, de test, et de déploiement d'applications.
+
+
+```
+
+
 ## Gestion des Jobs
 
 Dans un processus d'intégration et de déploiement continus (CI/CD), la gestion des jobs est essentielle pour orchestrer les différentes tâches nécessaires à la préparation et au déploiement d'une application. Un job peut être vu comme une unité de travail ou une tâche individuelle qui fait partie d'un ensemble plus vaste d'opérations dans un workflow.
