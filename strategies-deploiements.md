@@ -32,6 +32,70 @@ Les stratégies de déploiement définissent comment les applications sont livr�
 - **Déploiement Canary** : Des versions nouvelles ou modifiées de l'application sont déployées à un sous-ensemble limité d'utilisateurs avant d'être déployées à l'ensemble de la base d'utilisateurs. Cela permet de tester les changements dans un environnement de production avec un risque minimal.
 - **Déploiement Rolling** : Le déploiement se fait progressivement par mises à jour successives des instances ou des serveurs. Chaque serveur est mis à jour individuellement, assurant ainsi que le service reste disponible pendant le processus de déploiement.
 
+
+
+## Déploiement Direct sur un VPS
+
+Pour les petits projets ou les applications web simples, une stratégie de déploiement direct est souvent suffisante et efficace. Cette méthode consiste à utiliser GitHub Actions pour automatiser le déploiement de votre code directement sur un serveur VPS chaque fois qu'une modification est poussée sur une branche spécifique, généralement `main` ou `master`.
+
+### Avantages
+
+- **Simplicité** : Moins complexe que les déploiements Blue/Green ou Canary, idéal pour les projets avec des exigences de déploiement moins critiques.
+- **Rapidité** : Permet un déploiement rapide et automatique des mises à jour sans intervention manuelle.
+- **Coût-Efficace** : Réduit le besoin de ressources supplémentaires ou d'une infrastructure complexe.
+
+### Mise en Pratique
+
+Supposons que vous ayez une application web simple que vous souhaitez déployer automatiquement sur votre VPS. Vous pourriez configurer un workflow dans GitHub Actions comme suit :
+
+1. **Définir les Secrets** : Configurez d'abord les informations de connexion à votre VPS dans les secrets de GitHub, telles que `HOST`, `USERNAME`, et `SSH_KEY`.
+
+2. **Créer le Workflow de Déploiement** :
+
+```yaml
+name: Déploiement Simple sur VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Déploiement sur VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /var/www/monapp
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart all
+```
+
+Ce workflow effectue les actions suivantes à chaque push sur la branche `main` :
+
+- **Checkout** : Extrait le code le plus récent.
+- **Connexion SSH** : Utilise `appleboy/ssh-action` pour se connecter à votre VPS via SSH.
+- **Script de Déploiement** : Met à jour le code de l'application, installe les dépendances, construit l'application et redémarre le processus avec PM2 (ou tout autre gestionnaire de processus que vous utilisez).
+
+### Bonnes Pratiques
+
+- **Testez Localement** : Avant de pousser vos changements, assurez-vous que tout fonctionne comme prévu en local.
+- **Backup** : Ayez toujours une stratégie de sauvegarde en place pour votre serveur et votre base de données en cas de problème lors du déploiement.
+- **Surveillance et Logs** : Mettez en place une surveillance et des logs adéquats sur votre VPS pour rapidement identifier et résoudre tout problème post-déploiement.
+
+
+Le déploiement direct sur un VPS est une stratégie efficace pour les petits projets ou les applications web simples, offrant une méthode rapide et automatisée pour mettre à jour votre application en production. En utilisant GitHub Actions pour ce processus, vous pouvez minimiser les temps d'arrêt et maximiser l'efficacité de votre flux de travail de déploiement.
+
 ## Application Pratique
 
 Pour appliquer ces stratégies via GitHub Actions, vous utiliserez des workflows qui définissent les étapes de déploiement, incluant des tests, la mise en place de l'environnement et le basculement du trafic. La sélection d'une stratégie dépend de plusieurs facteurs, tels que la tolérance au temps d'arrêt, la capacité à tester en production et la complexité de l'infrastructure.
