@@ -84,7 +84,7 @@ Ce fichier de workflow GitHub Actions définit un processus automatique pour dé
 
 ## Le Script `deploy.sh`
 
-Le `script.sh` mentionné dans l'exemple de workflow est un script shell que vous devriez avoir sur votre VPS. Ce script contient les commandes nécessaires pour déployer ou mettre à jour votre application sur le serveur. L'utilisation d'un script de déploiement permet de centraliser et de standardiser le processus de déploiement, garantissant que toutes les étapes nécessaires sont exécutées de manière cohérente.
+Le `deploy.sh` mentionné dans l'exemple de workflow est un script shell que vous devriez avoir sur votre VPS. Ce script contient les commandes nécessaires pour déployer ou mettre à jour votre application sur le serveur. L'utilisation d'un script de déploiement permet de centraliser et de standardiser le processus de déploiement, garantissant que toutes les étapes nécessaires sont exécutées de manière cohérente.
 
 **Une explication et un exemple de ce `deploy.sh` se trouve plus loin dans cette page.**
 
