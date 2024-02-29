@@ -21,7 +21,7 @@
 
 ## Module 4 : Travailler avec des Actions et des Jobs
 ### [4.1. Utilisation d'Actions du Marketplace](./utilisation-actions-marketplace-github.md)
-### 4.2. Gestion des Jobs et de la Parallélisation
+### [4.2. Gestion des Jobs et de la Parallélisation](./gestion-parallelisation-jobs-github-actions.md)
 
 ---
 
