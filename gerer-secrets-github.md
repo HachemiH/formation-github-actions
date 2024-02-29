@@ -42,6 +42,64 @@ Imaginons que vous souhaitiez déployer votre application sur un VPS via SSH en 
 - `SSH_KEY` : Votre clé privée SSH, utilisée pour établir une connexion sécurisée au VPS sans exposer votre mot de passe.
 - `VPS_HOST` : L'adresse de votre serveur VPS, permettant à GitHub Actions de savoir où se connecter.
 
+
+# Fichier de Workflow 
+
+```yaml
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: SSH and Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: "votre_user"
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /path/to/your/app
+            git pull
+            ./deploy.sh
+```
+
+Ce fichier de workflow GitHub Actions définit un processus automatique pour déployer une application sur un VPS chaque fois qu'un push est effectué sur la branche `main`.
+
+## Qu'est-ce qu'Appleboy/ssh-action ?
+
+`appleboy/ssh-action` est une action GitHub qui permet d'établir une connexion SSH à un serveur distant directement depuis un workflow GitHub Actions. Cette action simplifie l'exécution de commandes SSH sur un serveur distant, ce qui est idéal pour déployer des applications, exécuter des scripts, ou effectuer des tâches de maintenance à distance.
+
+- **Avantages :**
+  - Automatisation du déploiement : Permet de déployer automatiquement votre application sur un serveur distant après chaque push, réduisant le risque d'erreurs humaines et accélérant le processus de déploiement.
+  - Sécurité : Utilise des secrets GitHub pour gérer les informations d'identification, assurant que les données sensibles restent sécurisées.
+
+## Le Script `deploy.sh`
+
+Le `script.sh` mentionné dans l'exemple de workflow est un script shell que vous devriez avoir sur votre VPS. Ce script contient les commandes nécessaires pour déployer ou mettre à jour votre application sur le serveur. L'utilisation d'un script de déploiement permet de centraliser et de standardiser le processus de déploiement, garantissant que toutes les étapes nécessaires sont exécutées de manière cohérente.
+
+**Une explication et un exemple de ce `deploy.sh` se trouve plus loin dans cette page.**
+
+- **Fonctions typiques de `deploy.sh` :**
+  - Arrêt de l'ancienne version de l'application (si nécessaire).
+  - Mise à jour des fichiers de l'application, souvent en utilisant `git pull` pour récupérer la dernière version du code depuis un dépôt.
+  - Installation des dépendances, par exemple avec `npm install` pour un projet Node.js.
+  - Migration de base de données ou autres tâches préalables au lancement.
+  - Démarrage de la nouvelle version de l'application.
+
+
+L'utilisation de `appleboy/ssh-action` dans un workflow GitHub Actions offre une méthode puissante et sécurisée pour automatiser le déploiement d'applications sur un VPS. En combinaison avec un script de déploiement comme `deploy.sh`, les développeurs peuvent simplifier et sécuriser le processus de mise à jour et de maintenance de leurs applications sur des serveurs distants, en s'assurant que les bonnes pratiques sont suivies et que les configurations sont cohérentes.
+
+
+
 ### Création du Workflow
 
 ```yaml
@@ -94,6 +152,53 @@ steps:
  **username:** Votre nom d'utilisateur sur le VPS.
   - **key:** Utilise le secret `SSH_KEY` pour l'authentification SSH.
   - **script:** Les commandes à exécuter sur le VPS, comme naviguer vers le répertoire de votre application, mettre à jour le code source avec `git pull`, et lancer un script de déploiement.
+
+
+## Explication du `deploy.sh`
+
+L'exemple suivant suppose que vous avez une application web simple que vous souhaitez mettre à jour et redémarrer sur votre serveur VPS.
+
+```bash
+#!/bin/bash
+
+# Naviguer dans le répertoire de votre application
+cd /path/to/your/app
+
+# Mettre à jour le code source
+# Supposons que votre code est hébergé sur un dépôt Git
+git pull origin main
+
+# Installer les dépendances
+# Exemple pour une application Node.js
+npm install
+
+# Construire votre projet si nécessaire
+# Exemple pour une application construite avec un outil comme webpack
+npm run build
+
+# Redémarrer le serveur
+# Cela dépend de la manière dont votre application est servie
+# Exemple pour une application Node.js utilisant pm2
+pm2 restart app_name
+
+# Pour d'autres types d'applications, vous pouvez avoir besoin de commandes spécifiques
+# Exemple pour redémarrer un service systemd
+# systemctl restart my_application.service
+
+echo "Déploiement terminé"
+```
+
+Ce script effectue les actions suivantes :
+
+1. **Navigation** : Se déplace dans le répertoire où votre application est située sur le serveur.
+2. **Mise à jour du code** : Utilise `git pull` pour mettre à jour le code de l'application à la dernière version disponible sur la branche principale.
+3. **Installation des dépendances** : Exécute `npm install` pour s'assurer que toutes les dépendances nécessaires sont installées ou mises à jour.
+4. **Construction du projet** : Pour les applications qui nécessitent une étape de construction, `npm run build` est exécuté.
+5. **Redémarrage du serveur/application** : Utilise `pm2` pour redémarrer l'application Node.js. Si vous utilisez un autre système pour servir votre application, vous aurez besoin d'adapter cette partie du script à vos besoins (par exemple, en utilisant `systemctl restart` pour un service systemd).
+
+Assurez-vous de modifier le script en fonction de l'environnement spécifique de votre serveur et des exigences de votre application. Par exemple, si votre application est une application Python utilisant Gunicorn et Nginx, les commandes de redémarrage et de construction seront différentes.
+
+
 
 ## Résumé
 
