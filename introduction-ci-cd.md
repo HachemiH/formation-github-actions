@@ -1,5 +1,25 @@
 # Introduction à la CI/CD 
 
+<blockquote>
+  <h2>Prérequis</h2>
+  <p>Avant de commencer ce module, vous devriez être familiarisé avec :</p>
+  <ul>
+    <li>Les concepts de base du développement logiciel.</li>
+    <li>Une compréhension élémentaire de l'utilisation de Git et GitHub.</li>
+    <li>Les fondamentaux du travail en équipe sur des projets logiciels.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <h2>Objectifs Pédagogiques</h2>
+  <p>À la fin de ce module, vous serez en mesure de :</p>
+  <ul>
+    <li>Comprendre les principes fondamentaux de la CI/CD et leur importance dans le développement logiciel moderne.</li>
+    <li>Identifier les étapes clés d'une pipeline CI/CD et leur rôle dans l'assurance de la qualité du code et dans l'efficacité du déploiement.</li>
+    <li>Reconnaître le rôle de Git comme outil essentiel pour l'intégration et la livraison continues.</li>
+  </ul>
+</blockquote>
+
 Imaginons que nous préparons un grand repas de famille. Ce repas représente notre projet d'application web, avec toutes ses composantes : l'API, la base de données, et le front-end. Comme dans tout grand repas, il y a plusieurs étapes clés : la planification, la préparation, la cuisson, le dressage des plats, et enfin, le service aux invités. Dans cette analogie, ces étapes représentent les différents aspects de la pipeline CI/CD et le rôle essentiel de Git dans ce processus.
 
 ## Planification : L'Importance de la planification
@@ -17,4 +37,15 @@ Après la cuisson, nous dressons les plats. Cela implique de les présenter de m
 ## Service aux Invités : Déploiement Continu (CD)
 
 Le moment tant attendu : servir le repas à nos invités. De manière similaire, le **Déploiement Continu** est l'étape où notre application est finalement mise en ligne et accessible aux utilisateurs. Tout comme le service d'un plat bien préparé reflète le travail acharné de la cuisine, le déploiement d'une nouvelle version de l'application montre le fruit du processus CI/CD.
+
+
+
+## Résumé
+
+1. **Planification** : Comme la création d'une liste de courses pour un grand repas, la planification implique l'utilisation d'outils de gestion de projet pour définir et suivre les tâches nécessaires au succès du projet.
+2. **Préparation et Cuisson (CI)** : L'intégration continue est le cœur du processus, où chaque modification est automatiquement testée pour s'assurer de la qualité et de la compatibilité avec le reste du projet, à l'instar du goûtage régulier pendant la préparation d'un plat.
+3. **Dressage des Plats (CD)** : La livraison continue prépare l'application pour un déploiement à tout moment, en s'assurant qu'elle est toujours dans le meilleur état possible pour les utilisateurs finaux, similaire à la présentation soignée d'un plat avant le service.
+4. **Service aux Invités (CD)** : Le déploiement continu est l'étape finale où l'application est mise en ligne et disponible pour les utilisateurs, reflétant le travail accompli à travers les étapes de CI/CD.
+
+Ce module vous introduit aux concepts essentiels de la CI/CD, vous préparant à implémenter ces pratiques dans vos projets pour améliorer la qualité du code, l'efficacité du déploiement et la collaboration au sein de votre équipe.
 
