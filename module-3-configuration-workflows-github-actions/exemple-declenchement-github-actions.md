@@ -1,5 +1,28 @@
 # Module 3.3 : Exemple d'Automatisation d'une Réponse à une Issue avec GitHub Actions
 
+<blockquote>
+  <h2>Prérequis</h2>
+  <p>Avant de commencer, vous devriez être à l'aise avec :</p>
+  <ul>
+    <li>La création et la gestion de dépôts sur GitHub.</li>
+    <li>Les bases de la syntaxe YAML et la configuration de fichiers de workflow GitHub Actions.</li>
+    <li>La compréhension des déclencheurs d'événements dans GitHub Actions, comme introduit dans les modules précédents.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <h2>Objectifs Pédagogiques</h2>
+  <p>À la fin de ce module, vous serez capable de :</p>
+  <ul>
+    <li>Configurer un workflow GitHub Actions pour automatiser les réponses aux issues ouvertes dans votre dépôt.</li>
+    <li>Utiliser le déclencheur d'événement `issues` pour activer un workflow spécifique.</li>
+    <li>Employer `actions/github-script` pour exécuter des scripts qui interagissent avec les issues GitHub.</li>
+    <li>Tester et valider l'efficacité de votre workflow en créant une issue dans votre dépôt.</li>
+  </ul>
+</blockquote>
+
+---
+
 Ce module vous apprendra comment configurer un workflow GitHub Actions pour automatiser une réponse à une issue. Ce processus met en œuvre des déclencheurs d'événements pour activer le workflow, illustrant un cas d'usage pratique de GitHub Actions.
 
 ## Étape 1 : Création du Fichier de Workflow
@@ -53,3 +76,18 @@ jobs:
 3. **Vérifiez** l'issue pour voir le commentaire automatique posté par GitHub Actions.
 
 Ce module offre un aperçu pratique de l'utilisation des déclencheurs d'événements avec GitHub Actions, démontrant comment automatiser des tâches courantes pour améliorer l'efficacité de la gestion de votre projet.
+
+
+## Résumé
+
+1. **Création du Fichier de Workflow** : Commencez par créer un fichier YAML dans le répertoire `.github/workflows` de votre dépôt GitHub, par exemple `issue_response.yml`.
+
+2. **Configuration du Workflow** :
+   - **Déclencheur** : Utilisez `on: issues` avec le type `opened` pour activer le workflow lorsque de nouvelles issues sont ouvertes.
+   - **Jobs et Steps** : Configurez un job `respond_to_issue` qui exécute des steps utilisant `actions/github-script` pour poster un commentaire automatique sur l'issue ouverte.
+   - **Authentification** : Employez `github-token: ${{secrets.GITHUB_TOKEN}}` pour authentifier les interactions avec GitHub via le workflow.
+
+3. **Test du Workflow** :
+   - Après avoir poussé le fichier de workflow à votre dépôt, ouvrez une nouvelle issue pour déclencher automatiquement le workflow.
+   - Vérifiez que le commentaire automatique est bien posté sur l'issue, confirmant le bon fonctionnement du workflow.
+
