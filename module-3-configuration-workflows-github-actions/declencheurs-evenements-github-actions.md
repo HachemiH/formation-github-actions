@@ -1,5 +1,26 @@
 # Module 3.2 : Déclencheurs d'Événements dans GitHub Actions
 
+<blockquote>
+  <h2>Prérequis</h2>
+  <p>Avant d'aborder ce module, il est recommandé d'avoir :</p>
+  <ul>
+    <li>Une compréhension de base des workflows GitHub Actions introduits dans les modules précédents.</li>
+    <li>Une familiarité avec les concepts de base de Git, notamment les commits, les branches, et les Pull Requests.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <h2>Objectifs Pédagogiques</h2>
+  <p>Après avoir complété ce module, vous serez capable de :</p>
+  <ul>
+    <li>Comprendre et utiliser différents types de déclencheurs d'événements pour automatiser les workflows GitHub Actions.</li>
+    <li>Configurer des workflows pour réagir à des événements spécifiques tels que les push, les Pull Requests, et les événements planifiés avec la syntaxe cron.</li>
+    <li>Exploiter la flexibilité des déclencheurs d'événements pour améliorer l'automatisation et l'efficacité de votre pipeline CI/CD.</li>
+  </ul>
+</blockquote>
+
+---
+
 GitHub Actions permet de définir des workflows automatisés qui sont exécutés en réponse à des événements spécifiques dans votre dépôt GitHub. Ces déclencheurs d'événements jouent un rôle clé dans l'automatisation de votre pipeline CI/CD, en permettant aux workflows de réagir de manière dynamique à des changements ou à des actions spécifiques.
 
 ## Types de Déclencheurs d'Événements
@@ -51,3 +72,20 @@ jobs:
 ```
 
 En utilisant ces déclencheurs d'événements, vous pouvez créer des workflows qui s'alignent précisément sur le cycle de vie de votre projet, améliorant l'efficacité et la réactivité de votre pipeline CI/CD.
+
+
+
+## Résumé
+
+1. **Push** : Automatisez l'exécution de workflows à chaque fois qu'un commit est poussé vers le dépôt, permettant une intégration continue efficace.
+
+2. **Pull Request** : Utilisez ce déclencheur pour lancer des workflows lorsqu'une action est effectuée sur une Pull Request, facilitant les tests automatisés et les vérifications de code avant la fusion.
+
+3. **Schedule** : Planifiez l'exécution de workflows à des moments précis avec la syntaxe cron, idéal pour les tâches récurrentes comme les mises à jour ou les audits réguliers.
+
+4. **Workflow Dispatch** : Offre la possibilité de déclencher manuellement des workflows depuis GitHub, apportant une flexibilité pour exécuter des tâches à la demande.
+
+5. **Autres Événements** : GitHub Actions prend en charge une large gamme d'événements, vous permettant de créer des workflows personnalisés qui s'adaptent à divers besoins et scénarios d'automatisation.
+
+6. **Configuration d'un Déclencheur** : La configuration des déclencheurs se fait facilement dans le fichier YAML du workflow, vous permettant de spécifier les branches et les conditions sous lesquelles vos workflows doivent s'exécuter.
+
