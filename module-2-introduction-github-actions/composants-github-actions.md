@@ -1,5 +1,27 @@
 # Module 2.2 : Composants de base de GitHub Actions
 
+<blockquote>
+  <h2>Prérequis</h2>
+  <p>Avant de plonger dans ce module, il est recommandé d'avoir :</p>
+  <ul>
+    <li>Une compréhension de base de l'usage et de la navigation sur GitHub.</li>
+    <li>Une familiarité avec le concept de l'intégration continue (CI) et du déploiement continu (CD).</li>
+    <li>Des connaissances élémentaires en YAML et en scripting.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <h2>Objectifs Pédagogiques</h2>
+  <p>Après avoir terminé ce module, vous serez capable de :</p>
+  <ul>
+    <li>Identifier et décrire les composants clés de GitHub Actions, y compris les workflows, jobs, steps, actions, et runners.</li>
+    <li>Comprendre la structure et le fonctionnement des fichiers YAML pour la configuration des workflows GitHub Actions.</li>
+    <li>Appliquer des pratiques d'optimisation pour l'utilisation efficace des ressources GitHub Actions, notamment la gestion des minutes d'exécution.</li>
+  </ul>
+</blockquote>
+
+---
+
 GitHub Actions est un outil puissant de CI/CD intégré à l'écosystème GitHub. Il permet aux développeurs d'automatiser leurs workflows de développement logiciel directement depuis leurs dépôts GitHub. Pour comprendre comment GitHub Actions fonctionne, il est essentiel de se familiariser avec ses composants de base : workflows, jobs, steps, actions, et runners.
 
 
@@ -98,5 +120,18 @@ Ils fonctionnent comme des ouvriers spécialisés chargés d'exécuter les tâch
 En fournissant à la fois des options de runners hébergés et la possibilité de configurer des runners auto-hébergés, GitHub Actions offre une flexibilité maximale pour répondre à différents besoins d'exécution de workflow, que ce soit pour des projets simples ou pour des infrastructures complexes nécessitant des configurations personnalisées.
 
 Cette structure clarifie la manière dont les différents composants de GitHub Actions interagissent pour automatiser les processus de développement, de la définition du workflow jusqu'à l'exécution des tâches sur des runners.
+
+## Résumé
+
+1. **Configuration des Workflows avec des Fichiers YAML** : Apprenez à créer et configurer des workflows GitHub Actions à l'aide de fichiers YAML, qui définissent les événements déclencheurs, les jobs à exécuter, et les étapes spécifiques de chaque job.
+
+2. **Composants Clés** :
+   - **Workflows** : Séquences d'instructions automatisées déclenchées par des événements spécifiques dans votre dépôt GitHub.
+   - **Jobs** : Groupes de steps qui s'exécutent sur le même runner, pouvant s'exécuter en parallèle ou séquentiellement.
+   - **Steps** : Tâches individuelles au sein d'un job, pouvant exécuter des commandes shell ou des actions.
+   - **Actions** : Ensembles de tâches préemballées que vous pouvez utiliser dans vos steps pour exécuter des opérations complexes sans écrire de code supplémentaire.
+   - **Runners** : Serveurs qui exécutent vos workflows, disponibles en versions hébergées par GitHub ou auto-hébergées pour une personnalisation plus poussée.
+
+3. **Gestion des Minutes d'Exécution** : Optimisez l'utilisation des minutes d'exécution allouées à votre compte GitHub pour exécuter des workflows, en mettant en œuvre des stratégies telles que la réduction du temps d'exécution des workflows, l'usage de runners auto-hébergés, et la configuration précise des événements déclencheurs.
 
 
