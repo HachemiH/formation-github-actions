@@ -6,7 +6,7 @@
   <ul>
     <li>Une compréhension de base des principes de développement logiciel et du workflow de développement.</li>
     <li>Une familiarité avec l'utilisation de Git et GitHub pour la gestion de versions.</li>
-    <li>Une connaissance initiale des concepts DevOps, bien que non obligatoire, serait bénéfique.</li>
+    <li>Une connaissance initiale des concepts DevOps serait bénéfique.</li>
   </ul>
 </blockquote>
 
