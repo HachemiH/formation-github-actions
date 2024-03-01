@@ -15,7 +15,7 @@
   <p>À la fin de ce module, vous serez capable de :</p>
   <ul>
     <li>Identifier et comprendre le rôle des principaux outils et technologies utilisés dans les processus CI/CD.</li>
-    <li>Distinguer entre les différents types d'outils (gestion de version, serveurs CI, CD, orchestration de conteneurs, monitoring, logging, et SemVer) et savoir quand les utiliser.</li>
+    <li>Distinguer les différents types d'outils (gestion de version, serveurs CI, CD, orchestration de conteneurs, monitoring, logging, et SemVer) et savoir quand les utiliser.</li>
     <li>Comprendre comment ces outils s'intègrent dans une stratégie DevOps pour améliorer l'efficacité et la qualité du développement logiciel.</li>
   </ul>
 </blockquote>
