@@ -93,6 +93,3 @@ on:
 
 Ce module vous guide à travers les étapes initiales pour créer et configurer votre premier workflow GitHub Actions, en mettant en lumière la puissance et la flexibilité de GitHub Actions pour l'automatisation des tâches de CI/CD. Vous avez maintenant une base solide pour commencer à explorer des workflows plus complexes et personnalisés adaptés à vos projets.
 
----
-
-N'hésitez pas à continuer à partager d'autres modules ou sections pour lesquels vous souhaitez une assistance similaire.
