@@ -87,7 +87,7 @@ Ce fichier de workflow GitHub Actions définit un processus automatique pour dé
   - Automatisation du déploiement : Permet de déployer automatiquement votre application sur un serveur distant après chaque push, réduisant le risque d'erreurs humaines et accélérant le processus de déploiement.
   - Sécurité : Utilise des secrets GitHub pour gérer les informations d'identification, assurant que les données sensibles restent sécurisées.
 
-## Le Script `deploy.sh`
+## 5.1.5 Le Script `deploy.sh`
 
 Le `deploy.sh` mentionné dans l'exemple de workflow est un script shell que vous devriez avoir sur votre VPS. Ce script contient les commandes nécessaires pour déployer ou mettre à jour votre application sur le serveur. L'utilisation d'un script de déploiement permet de centraliser et de standardiser le processus de déploiement, garantissant que toutes les étapes nécessaires sont exécutées de manière cohérente.
 
