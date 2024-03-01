@@ -109,4 +109,3 @@ La gestion des jobs dans un workflow CI/CD repose sur deux concepts clés : **la
 
 - **Parallélisation :** Optimise le temps d'exécution du workflow en permettant l'exécution simultanée de plusieurs jobs ou étapes qui ne dépendent pas les uns des autres. La parallélisation est efficace pour les tests qui peuvent être segmentés ou pour les tâches pouvant s'exécuter indépendamment, réduisant ainsi le temps global nécessaire pour le processus CI/CD.
 
-Ensemble, la gestion des dépendances et la parallélisation forment le socle de l'optimisation des workflows CI/CD, permettant une exécution plus rapide et plus efficace des tâches de développement et de déploiement.
