@@ -1,4 +1,4 @@
-# Introduction à la CI/CD 
+# 1.1 Introduction à la CI/CD 
 
 <blockquote>
   <h2>Prérequis</h2>
