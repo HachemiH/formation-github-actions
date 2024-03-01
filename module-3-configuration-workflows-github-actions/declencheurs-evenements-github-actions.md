@@ -23,7 +23,7 @@
 
 GitHub Actions permet de définir des workflows automatisés qui sont exécutés en réponse à des événements spécifiques dans votre dépôt GitHub. Ces déclencheurs d'événements jouent un rôle clé dans l'automatisation de votre pipeline CI/CD, en permettant aux workflows de réagir de manière dynamique à des changements ou à des actions spécifiques.
 
-## Types de Déclencheurs d'Événements
+## 3.2.1 Types de Déclencheurs d'Événements
 
 ### Push
 
@@ -50,7 +50,7 @@ GitHub Actions permet de définir des workflows automatisés qui sont exécutés
 - **Syntaxe**: `on: <event_name>`
 - **Description**: GitHub Actions supporte une variété d'autres événements, tels que `issues`, `release`, et `fork`. Chaque type d'événement permet de déclencher des workflows pour des cas d'usage spécifiques, renforçant l'intégration et l'automatisation dans l'écosystème GitHub.
 
-## Configuration d'un Déclencheur d'Événement
+## 3.2.2 Configuration d'un Déclencheur d'Événement
 
 La configuration d'un déclencheur se fait dans le fichier YAML du workflow, sous la clé `on`. Voici un exemple de workflow déclenché par des push sur la branche principale et par des événements sur des Pull Requests :
 
