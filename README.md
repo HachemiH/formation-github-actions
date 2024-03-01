@@ -13,9 +13,9 @@
 ---
 
 ## Module 3 : Configuration d'un Workflow GitHub Actions
-### [3.1 Création de votre premier Workflow](./creation-premier-worflow.md)
-### [3.2 Déclencheurs d'événements](./declencheurs-evenements-github-actions.md)
-### [3.3 Exemple de déclenchement d'événements](./exemple-declenchement-github-actions.md)
+### [3.1 Création de votre premier Workflow](./module-3-configuration-workflows-github-actions/creation-premier-worflow.md)
+### [3.2 Déclencheurs d'événements](./module-3-configuration-workflows-github-actions/declencheurs-evenements-github-actions.md)
+### [3.3 Exemple de déclenchement d'événements](./module-3-configuration-workflows-github-actions/exemple-declenchement-github-actions.md)
 
 ---
 
