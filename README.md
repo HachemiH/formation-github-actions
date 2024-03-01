@@ -34,7 +34,7 @@
 ## Module 6 : Déploiement avec GitHub Actions
 ### [6.1. Stratégies de Déploiement](./strategies-deploiements.md)
 ### [6.2. Déploiement sur un VPS](./deploiement-github-actions-vps.md)
-### 6.3. Intégration avec Docker
+### [6.3. Intégration avec Docker](./deploiement-docker-github-actions.md)
 
 ---
 
