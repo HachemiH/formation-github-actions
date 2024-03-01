@@ -1,4 +1,4 @@
-## 1.2 Les Principaux Outils et Technologies de CI/CD
+## Module 1.2 : Les Principaux Outils et Technologies de CI/CD
 
 Le DevOps est une approche qui vise à renforcer la collaboration entre les développeurs de logiciels et les équipes d'opérations, avec un accent sur l'automatisation des processus de développement, de déploiement et d'opération. Au cœur du DevOps, les outils de CI/CD jouent un rôle crucial en automatisant les étapes de compilation, de test, de livraison et de déploiement du logiciel. Découvrons les différents types d'outils impliqués dans ces processus.
 

@@ -1,4 +1,4 @@
-# 2.2 Composants de base de GitHub Actions
+# Module 2.2 : Composants de base de GitHub Actions
 
 GitHub Actions est un outil puissant de CI/CD intégré à l'écosystème GitHub. Il permet aux développeurs d'automatiser leurs workflows de développement logiciel directement depuis leurs dépôts GitHub. Pour comprendre comment GitHub Actions fonctionne, il est essentiel de se familiariser avec ses composants de base : workflows, jobs, steps, actions, et runners.
 
