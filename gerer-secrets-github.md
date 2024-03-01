@@ -1,25 +1,30 @@
-# 5.1 Gérer les Secrets dans GitHub
+# Module 5.1 : Gérer les Secrets dans GitHub
 
 <blockquote>
-  <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, l'apprenant sera en mesure de :</p>
+  <h2>Prérequis</h2>
+  <p>Pour aborder efficacement ce module, vous devriez avoir :</p>
   <ul>
-    <li>Comprendre ce que sont les secrets et pourquoi ils sont essentiels pour sécuriser les workflows CI/CD.</li>
-    <li>Savoir comment ajouter, modifier et gérer les secrets dans GitHub pour une utilisation dans GitHub Actions.</li>
-    <li>Apprendre à utiliser des secrets dans des workflows pour interagir de manière sécurisée avec un VPS.</li>
+    <li>Une connaissance de base de l'utilisation de GitHub et une compréhension initiale des workflows GitHub Actions.</li>
+    <li>Une compréhension élémentaire des principes de sécurité, tels que la connexion sécurisée via SSH, et de l'importance de protéger les informations sensibles.</li>
+    <li>Des notions de base sur les serveurs VPS et leur gestion.</li>
   </ul>
 </blockquote>
 
 <blockquote>
-  <h2>Prérequis</h2>
-  <p>Connaissances de base de l'utilisation de GitHub et des workflows GitHub Actions.</p>
-  <p>Compréhension élémentaire des serveurs VPS et de la connexion sécurisée via SSH.</p>
+  <h2>Objectifs Pédagogiques</h2>
+  <p>À la fin de ce module, vous serez capable de :</p>
+  <ul>
+    <li>Identifier ce que sont les secrets dans le contexte des workflows GitHub Actions et comprendre leur importance pour sécuriser les pipelines CI/CD.</li>
+    <li>Démontrer la capacité à ajouter, modifier, et gérer efficacement les secrets au sein de GitHub pour sécuriser les données sensibles utilisées dans les workflows.</li>
+    <li>Appliquer les secrets de manière pratique dans les workflows GitHub Actions pour sécuriser les interactions avec un serveur VPS, notamment pour les déploiements.</li>
+  </ul>
 </blockquote>
 
+---
 
 La gestion des secrets est cruciale dans les workflows d'intégration et de déploiement continus (CI/CD), particulièrement lorsqu'il s'agit d'automatiser des interactions avec des systèmes externes comme les serveurs VPS. Les secrets permettent de stocker et d'utiliser des données sensibles de manière sécurisée, sans les exposer dans le code ou les logs de build.
 
-## Découverte des Secrets
+## 5.1.1 Découverte des Secrets
 
 ### Qu'est-ce qu'un Secret ?
 
@@ -33,7 +38,7 @@ Les secrets sont utilisés pour :
 - Séparer les informations de configuration du code source, conformément aux meilleures pratiques de sécurité.
 - Permettre une modification et gestion centralisées des données d'accès sans nécessiter de changer le code source ou les workflows.
 
-## Exemple Pratique : Utilisation d'un Secret avec un VPS
+## 5.1.2 Exemple Pratique : Utilisation d'un Secret avec un VPS
 
 Imaginons que vous souhaitiez déployer votre application sur un VPS via SSH en utilisant GitHub Actions. Voici comment procéder :
 
@@ -74,7 +79,7 @@ jobs:
 
 Ce fichier de workflow GitHub Actions définit un processus automatique pour déployer une application sur un VPS chaque fois qu'un push est effectué sur la branche `main`.
 
-## Qu'est-ce qu'Appleboy/ssh-action ?
+## 5.1.3 Qu'est-ce qu'Appleboy/ssh-action ?
 
 `appleboy/ssh-action` est une action GitHub qui permet d'établir une connexion SSH à un serveur distant directement depuis un workflow GitHub Actions. Cette action simplifie l'exécution de commandes SSH sur un serveur distant, ce qui est idéal pour déployer des applications, exécuter des scripts, ou effectuer des tâches de maintenance à distance.
 
@@ -154,7 +159,7 @@ steps:
   - **script:** Les commandes à exécuter sur le VPS, comme naviguer vers le répertoire de votre application, mettre à jour le code source avec `git pull`, et lancer un script de déploiement.
 
 
-## Explication du `deploy.sh`
+### Explication du `deploy.sh`
 
 L'exemple suivant suppose que vous avez une application web simple que vous souhaitez mettre à jour et redémarrer sur votre serveur VPS.
 
@@ -199,9 +204,17 @@ Ce script effectue les actions suivantes :
 Assurez-vous de modifier le script en fonction de l'environnement spécifique de votre serveur et des exigences de votre application. Par exemple, si votre application est une application Python utilisant Gunicorn et Nginx, les commandes de redémarrage et de construction seront différentes.
 
 
-
 ## Résumé
 
-Les secrets dans GitHub offrent un moyen sécurisé de gérer les données sensibles nécessaires aux workflows CI/CD, en particulier lors de l'interaction avec des systèmes externes comme les VPS. En les utilisant, vous pouvez maintenir la sécurité et l'intégrité de vos processus d'automatisation tout en facilitant la gestion des informations d'accès critiques.
+1. **Introduction aux Secrets** : Les secrets permettent de stocker des informations sensibles, telles que des mots de passe, des jetons d'accès, ou des clés SSH, de manière sécurisée dans GitHub. Ils sont essentiels pour protéger vos données et configurations sensibles lors de l'automatisation des workflows CI/CD.
 
----
+2. **Utilisation Pratique des Secrets** : 
+   - Pour sécuriser la communication avec un serveur VPS dans un workflow GitHub Actions, les secrets tels que `SSH_KEY` et `VPS_HOST` sont utilisés pour stocker respectivement votre clé privée SSH et l'adresse de votre serveur VPS.
+   - Un exemple de fichier de workflow, `deploy.yml`, montre comment ces secrets peuvent être intégrés pour déployer une application sur un VPS de manière sécurisée.
+
+3. **`appleboy/ssh-action`** : Cette action GitHub est utilisée pour établir une connexion SSH sécurisée avec un serveur distant, permettant l'exécution de commandes pour le déploiement ou la maintenance. L'utilisation de cette action dans votre workflow facilite l'automatisation des déploiements tout en maintenant la sécurité grâce à l'usage de secrets.
+
+4. **Le Script de Déploiement `deploy.sh`** : 
+   - Un script shell côté serveur qui contient les commandes nécessaires pour mettre à jour et redémarrer votre application.
+   - Le script est invoqué dans le workflow GitHub Actions, démontrant comment les tâches de déploiement peuvent être automatisées de manière sécurisée en utilisant des secrets pour gérer les informations d'accès.
+
