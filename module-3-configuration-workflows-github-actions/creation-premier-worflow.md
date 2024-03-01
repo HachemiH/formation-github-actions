@@ -91,5 +91,4 @@ on:
 3. **Déclencheurs d'Événements Communs** :
    - Les workflows peuvent être activés par des événements tels que `push`, `pull_request`, ou à des moments précis grâce à `schedule`, en utilisant la syntaxe cron pour la planification.
 
-Ce module vous guide à travers les étapes initiales pour créer et configurer votre premier workflow GitHub Actions, en mettant en lumière la puissance et la flexibilité de GitHub Actions pour l'automatisation des tâches de CI/CD. Vous avez maintenant une base solide pour commencer à explorer des workflows plus complexes et personnalisés adaptés à vos projets.
 
