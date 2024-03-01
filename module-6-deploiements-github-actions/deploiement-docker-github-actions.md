@@ -1,14 +1,4 @@
-# 6.3 Intégration avec Docker
-
-<blockquote>
-  <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, vous serez en mesure de :</p>
-  <ul>
-    <li>Comprendre les avantages d'utiliser Docker dans le cadre de GitHub Actions pour le déploiement.</li>
-    <li>Configurer un workflow GitHub Actions qui utilise Docker pour construire et déployer des applications.</li>
-    <li>Appliquer des pratiques de sécurité pour le déploiement de conteneurs Docker via GitHub Actions.</li>
-  </ul>
-</blockquote>
+# Module 6.3 : Intégration avec Docker
 
 <blockquote>
   <h2>Prérequis</h2>
@@ -20,11 +10,20 @@
   </ul>
 </blockquote>
 
-## Introduction
+<blockquote>
+  <h2>Objectifs Pédagogiques</h2>
+  <p>À la fin de ce module, vous serez en mesure de :</p>
+  <ul>
+    <li>Comprendre les avantages d'utiliser Docker dans le cadre de GitHub Actions pour le déploiement.</li>
+    <li>Configurer un workflow GitHub Actions qui utilise Docker pour construire et déployer des applications.</li>
+    <li>Appliquer des pratiques de sécurité pour le déploiement de conteneurs Docker via GitHub Actions.</li>
+  </ul>
+</blockquote>
 
-Docker est devenu un outil incontournable pour le développement, le test, et le déploiement d'applications en fournissant un environnement isolé et reproductible. L'intégration de Docker dans les workflows GitHub Actions simplifie le processus de CI/CD en permettant la construction, le test, et le déploiement uniformes des applications, indépendamment de l'environnement.
+---
 
-## Configuration d'un Workflow Docker avec GitHub Actions
+
+## 6.3.1 Configuration d'un Workflow Docker avec GitHub Actions
 
 L'utilisation de Docker dans un workflow GitHub Actions se fait généralement en deux phases : la construction de l'image Docker et son déploiement.
 
@@ -42,7 +41,7 @@ L'utilisation de Docker dans un workflow GitHub Actions se fait généralement e
 2. **Déploiement sur le Serveur** :
    - Configurez votre serveur pour tirer et exécuter l'image Docker mise à jour, en utilisant des secrets GitHub pour stocker de manière sécurisée les informations d'authentification du registry.
 
-### Exemple de Workflow
+## 6.3.2 Exemple de Workflow
 
 ```yaml
 name: CI/CD avec Docker
@@ -77,7 +76,7 @@ La commande de run effectue deux opérations principales :
 Assurez-vous que les secrets `DOCKER_USERNAME` et `DOCKER_PASSWORD` sont bien configurés dans les paramètres de votre dépôt GitHub pour que ces commandes fonctionnent correctement. Cette approche renforce la sécurité de votre workflow en évitant l'exposition de vos identifiants Docker Hub.
 
 
-### Bonnes Pratiques
+## 6.3.3 Bonnes Pratiques
 
 - **Sécurisez vos Secrets** : Stockez toujours les informations d'authentification du registry Docker comme des secrets GitHub.
 - **Gestion des Tags d'Image** : Utilisez des tags d'image pour gérer différentes versions de votre application.
@@ -104,4 +103,3 @@ Dans ce module, nous avons couvert l'intégration de Docker dans vos workflows G
    - Utilisez des tags d'image pour gérer les versions de votre application.
    - Intégrez des tests automatiques dans votre workflow pour maintenir la qualité du code.
 
-Ce résumé fournit une structure simple pour revoir rapidement les concepts clés et les étapes impliquées dans l'intégration de Docker avec GitHub Actions pour le déploiement d'applications.
