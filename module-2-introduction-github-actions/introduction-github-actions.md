@@ -96,6 +96,3 @@ En comprenant et en gérant activement l'utilisation des minutes d'exécution, v
 
 Ce module vous a fourni une vue d'ensemble de GitHub Actions et de son importance dans l'automatisation des workflows de CI/CD, ainsi que des stratégies pour gérer efficacement les ressources et optimiser vos processus d'automatisation.
 
----
-
-Si vous avez d'autres modules ou sujets pour lesquels vous souhaitez un format similaire, n'hésitez pas à les partager.
