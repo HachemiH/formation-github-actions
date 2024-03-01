@@ -5,7 +5,7 @@
   <p>Avant de commencer ce module, assurez-vous de connaître :</p>
   <ul>
     <li>Les bases de l'utilisation de GitHub, y compris la création et la gestion de dépôts.</li>
-    <li>Une compréhension élémentaire de YAML et de son syntaxe.</li>
+    <li>Une compréhension élémentaire de YAML et de sa syntaxe.</li>
     <li>Les concepts initiaux de l'intégration continue (CI) et du déploiement continu (CD).</li>
   </ul>
 </blockquote>
