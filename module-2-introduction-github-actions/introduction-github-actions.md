@@ -1,5 +1,27 @@
-
 # Module 2.1 : Introduction à GitHub Actions 
+
+<blockquote>
+  <h2>Prérequis</h2>
+  <p>Avant de vous lancer dans ce module, vous devriez avoir :</p>
+  <ul>
+    <li>Une compréhension de base des principes de développement logiciel et du workflow de développement.</li>
+    <li>Une familiarité avec l'utilisation de Git et GitHub pour la gestion de versions.</li>
+    <li>Une connaissance initiale des concepts DevOps, bien que non obligatoire, serait bénéfique.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <h2>Objectifs Pédagogiques</h2>
+  <p>Après avoir complété ce module, vous serez capable de :</p>
+  <ul>
+    <li>Expliquer ce qu'est GitHub Actions et son rôle au sein de l'écosystème GitHub.</li>
+    <li>Identifier comment GitHub Actions peut être utilisé pour automatiser les workflows de CI/CD.</li>
+    <li>Comprendre l'intégration de GitHub Actions avec d'autres services et fonctionnalités GitHub.</li>
+    <li>Gérer efficacement les minutes d'exécution pour optimiser l'utilisation des ressources dans GitHub Actions.</li>
+  </ul>
+</blockquote>
+
+---
 
 GitHub Actions est un outil d'automatisation puissant qui s'intègre parfaitement dans l'écosystème GitHub, offrant aux développeurs la capacité d'automatiser leurs workflows de CI/CD directement au sein de leurs dépôts GitHub. En tant que partie intégrante de cet écosystème, GitHub Actions interagit avec une variété de services et fonctionnalités GitHub pour améliorer le cycle de vie du développement logiciel.
 
@@ -55,4 +77,25 @@ GitHub fournit des outils pour suivre et gérer l'utilisation des minutes d'exé
 En comprenant et en gérant activement l'utilisation des minutes d'exécution, vous pouvez tirer le meilleur parti de GitHub Actions tout en contrôlant les coûts associés à l'automatisation de vos workflows.
 
 
+## Résumé
 
+1. **Introduction à GitHub Actions** : GitHub Actions est un outil d'automatisation intégré à GitHub qui permet d'orchestrer des workflows de CI/CD directement depuis un dépôt GitHub.
+
+2. **L'Écosystème GitHub** : GitHub Actions tire parti des fonctionnalités GitHub existantes, comme les dépôts Git, les Pull Requests, GitHub Issues, et GitHub Pages, pour simplifier l'automatisation des tests, du déploiement, et d'autres tâches liées au développement logiciel.
+
+3. **Intégration de GitHub Actions** :
+   - Automatisation des tests lors de chaque push ou Pull Request.
+   - Déploiements automatisés sur diverses plateformes, y compris GitHub Pages ou des serveurs cloud.
+   - Utilisation avec GitHub Issues pour le suivi automatique des bugs.
+   - Exécution de scans de sécurité et de vérifications de conformité.
+
+4. **Gestion des Minutes d'Exécution** :
+   - GitHub offre un nombre de minutes gratuites pour l'exécution des workflows, avec des coûts additionnels si le quota est dépassé.
+   - Optimisez l'utilisation des minutes en réduisant le temps d'exécution des workflows et en utilisant des runners auto-hébergés pour les tâches intensives.
+   - Utilisez le dashboard d'utilisation et configurez des alertes pour gérer votre consommation et éviter des coûts inattendus.
+
+Ce module vous a fourni une vue d'ensemble de GitHub Actions et de son importance dans l'automatisation des workflows de CI/CD, ainsi que des stratégies pour gérer efficacement les ressources et optimiser vos processus d'automatisation.
+
+---
+
+Si vous avez d'autres modules ou sujets pour lesquels vous souhaitez un format similaire, n'hésitez pas à les partager.
