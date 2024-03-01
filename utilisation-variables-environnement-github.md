@@ -1,21 +1,22 @@
-# 5.2. Utilisation des Variables d'Environnement dans GitHub Actions
+# Module 5.2 : Utilisation des Variables d'Environnement dans GitHub Actions
+
+<blockquote>
+  <h2>Prérequis</h2>
+  <p>Avant de plonger dans ce module, il est recommandé que vous ayez :</p>
+  <ul>
+    <li>Une compréhension solide de l'utilisation de GitHub et des principes fondamentaux des GitHub Actions.</li>
+    <li>Des connaissances de base sur les serveurs VPS et les processus de déploiement d'applications web.</li>
+    <li>Une familiarité avec l'utilisation des variables d'environnement dans le développement logiciel pour la gestion de configurations.</li>
+  </ul>
+</blockquote>
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, vous serez en mesure de :</p>
+  <p>À l'issue de ce module, vous serez capable de :</p>
   <ul>
-    <li>Identifier les différents niveaux où les variables d'environnement peuvent être définies et utilisées dans GitHub Actions.</li>
-    <li>Comprendre comment et pourquoi utiliser les variables d'environnement pour gérer la configuration de déploiement d'une application web sur un VPS.</li>
-    <li>Appliquer les meilleures pratiques pour sécuriser les variables d'environnement contenant des données sensibles.</li>
-  </ul>
-</blockquote>
-<blockquote>
-  <h2>Prérequis</h2>
-  <p>Pour une compréhension optimale de ce module, vous devrez posséder :</p>
-  <ul>
-    <li>Une compréhension de base de l'utilisation de GitHub et des principes de GitHub Actions.</li>
-    <li>Des connaissances élémentaires sur les serveurs VPS et le processus de déploiement d'applications web.</li>
-    <li>Une familiarité avec la notion de variables d'environnement et leur utilité dans le développement logiciel.</li>
+    <li>Discerner les différents niveaux auxquels les variables d'environnement peuvent être définies dans GitHub Actions et leur utilisation optimale.</li>
+    <li>Illustrer l'application pratique des variables d'environnement pour orchestrer la configuration de déploiement d'une application web sur un VPS de manière sécurisée.</li>
+    <li>Implémenter des pratiques de sécurisation pour les variables d'environnement contenant des informations sensibles au sein de vos workflows GitHub Actions.</li>
   </ul>
 </blockquote>
 
@@ -23,7 +24,7 @@
 
 Les variables d'environnement jouent un rôle crucial dans les workflows CI/CD en permettant la personnalisation des opérations sans modifier le code source. Elles sont particulièrement utiles pour gérer des configurations spécifiques à l'environnement, telles que des URL de base, des clés d'API, ou des configurations de connexion à des bases de données, qui peuvent varier entre les environnements de développement, de test, et de production.
 
-## Où sont Stockées les Variables d'Environnement ?
+## 5.2.1 Où sont Stockées les Variables d'Environnement ?
 
 Dans GitHub Actions, les variables d'environnement peuvent être définies à plusieurs niveaux :
 
@@ -31,7 +32,7 @@ Dans GitHub Actions, les variables d'environnement peuvent être définies à pl
 - **Dans les paramètres du dépôt GitHub** : Sous l'onglet "Settings" du dépôt, puis "Secrets and variables" > "Environment secrets", où elles peuvent être associées à des environnements spécifiques.
 - **Au niveau de l'organisation** : Pour les variables partagées entre plusieurs dépôts au sein d'une organisation.
 
-## Exemple Pratique : Déploiement d'une Application Web sur un VPS
+## 5.2.2 Exemple Pratique : Déploiement d'une Application Web sur un VPS
 
 Imaginons une application web Node.js que vous souhaitez déployer automatiquement sur un VPS chaque fois que vous poussez du code sur la branche principale de votre dépôt GitHub.
 
@@ -95,8 +96,14 @@ jobs:
 - **Variables d'Environnement au Niveau Étape** : `DATABASE_URL` est utilisée uniquement lors de la construction de l'application, garantissant que l'accès à la base de données est sécurisé.
 - **Utilisation des Secrets** : `VPS_HOST`, `VPS_USERNAME`, et `SSH_PRIVATE_KEY` sont stockés comme secrets et utilisés pour établir une connexion sécurisée au VPS pour le déploiement.
 
+
 ## Résumé
 
-L'utilisation de variables d'environnement dans GitHub Actions offre une flexibilité et une sécurité essentielles lors du déploiement d'applications dans différents environnements. En les définissant à différents niveaux et en combinant leur utilisation avec des secrets pour les données sensibles, vous pouvez créer des workflows CI/CD robustes et sécurisés adaptés à vos besoins spécifiques de déploiement.
+Les variables d'environnement constituent un pilier dans la configuration des workflows CI/CD sur GitHub Actions, offrant une méthode sécurisée et flexible pour gérer des informations de configuration spécifiques aux environnements de développement, de test, et de production. 
 
+- **Stockage et Application** : Vous avez appris que les variables d'environnement peuvent être configurées à différents niveaux, y compris directement dans les fichiers de workflow YAML, au niveau des secrets de dépôt pour une utilisation transversale, ou même au niveau de l'organisation pour un partage entre plusieurs dépôts.
+
+- **Exemple d'Utilisation** : À travers un scénario pratique, vous avez vu comment déployer une application web Node.js sur un VPS en utilisant des variables d'environnement pour gérer des aspects critiques tels que les configurations de l'environnement d'exécution, la connexion à la base de données, et les détails de la connexion SSH au VPS.
+
+- **Bonnes Pratiques** : Enfin, ce module a souligné l'importance de sécuriser les variables d'environnement, en particulier celles contenant des données sensibles, en les déclarant comme secrets et en limitant leur portée d'utilisation aux étapes spécifiques du workflow où elles sont nécessaires.
 
