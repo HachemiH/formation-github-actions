@@ -94,5 +94,4 @@ En comprenant et en gérant activement l'utilisation des minutes d'exécution, v
    - Optimisez l'utilisation des minutes en réduisant le temps d'exécution des workflows et en utilisant des runners auto-hébergés pour les tâches intensives.
    - Utilisez le dashboard d'utilisation et configurez des alertes pour gérer votre consommation et éviter des coûts inattendus.
 
-Ce module vous a fourni une vue d'ensemble de GitHub Actions et de son importance dans l'automatisation des workflows de CI/CD, ainsi que des stratégies pour gérer efficacement les ressources et optimiser vos processus d'automatisation.
 
