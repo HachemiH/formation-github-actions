@@ -1,22 +1,22 @@
-# 6.1 Stratégies de Déploiement
+# Module 6.1 : Stratégies de Déploiement
 
 <blockquote>
-  <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, vous serez en mesure de :</p>
+  <h2>Prérequis</h2>
+  <p>Avant de vous lancer dans ce module, il est recommandé que vous ayez :</p>
   <ul>
-    <li>Identifier les différentes stratégies de déploiement applicables dans un workflow GitHub Actions.</li>
-    <li>Comprendre les avantages et les inconvénients de chaque stratégie de déploiement en fonction des besoins spécifiques du projet.</li>
-    <li>Appliquer les meilleures pratiques pour mettre en œuvre une stratégie de déploiement fiable et efficace via GitHub Actions.</li>
+    <li>Une solide compréhension des fondamentaux de GitHub Actions, y compris la création et la gestion de workflows.</li>
+    <li>Une familiarité avec les concepts de déploiement d'applications, tels que l'intégration continue (CI) et le déploiement continu (CD).</li>
+    <li>Des connaissances de base concernant les serveurs et l'hébergement d'applications, en particulier sur les VPS.</li>
   </ul>
 </blockquote>
 
 <blockquote>
-  <h2>Prérequis</h2>
-  <p>Pour aborder ce module dans les meilleures conditions, vous devriez posséder :</p>
+  <h2>Objectifs Pédagogiques</h2>
+  <p>À l'issue de ce module, vous serez capable de :</p>
   <ul>
-    <li>Une compréhension solide des fondamentaux de GitHub Actions, incluant la création et la gestion de workflows.</li>
-    <li>Une familiarité avec les concepts de base du déploiement d'applications, tels que l'intégration continue (CI) et le déploiement continu (CD).</li>
-    <li>Des connaissances de base sur les serveurs et l'hébergement d'applications, notamment sur les VPS.</li>
+    <li>Discerner les différentes stratégies de déploiement qui peuvent être intégrées dans un workflow GitHub Actions.</li>
+    <li>Évaluer les avantages et les inconvénients de chaque stratégie de déploiement par rapport aux besoins spécifiques de votre projet.</li>
+    <li>Mettre en œuvre des stratégies de déploiement choisies de manière fiable et efficace en utilisant GitHub Actions.</li>
   </ul>
 </blockquote>
 
@@ -24,7 +24,7 @@
 
 Dans le domaine du développement logiciel, le déploiement est une phase cruciale qui consiste à mettre à disposition une application pour les utilisateurs finaux. GitHub Actions offre une flexibilité remarquable pour automatiser cette étape, adaptant le processus aux besoins spécifiques de chaque projet grâce à différentes stratégies de déploiement.
 
-## Les Stratégies de Déploiement
+## 6.1.1 Les Stratégies de Déploiement
 
 Les stratégies de déploiement définissent comment les applications sont livrées aux environnements de production. Voici quelques stratégies couramment utilisées :
 
@@ -34,7 +34,7 @@ Les stratégies de déploiement définissent comment les applications sont livr�
 - **Déploiement Direct sur VPS** : Pour les projets de petite à moyenne taille, cette stratégie consiste à mettre à jour directement l'environnement de production sur un VPS à chaque push sur une branche spécifique, comme `main`. Cela peut être réalisé en utilisant des actions GitHub pour exécuter des scripts de déploiement qui transfèrent les fichiers mis à jour vers le VPS et redémarrent les services si nécessaire. Cette méthode est simple et efficace pour les projets n'exigeant pas de stratégies de déploiement complexes avec zéro temps d'arrêt.
 
 
-### Bonnes Pratiques
+## 6.1.2 Bonnes Pratiques
 
 - **Planifiez et documentez** : Avant d'implémenter une stratégie de déploiement, assurez-vous de comprendre ses implications et de documenter le processus.
 - **Testez Localement** : Avant de pousser vos changements, assurez-vous que tout fonctionne comme prévu en local.
@@ -45,11 +45,22 @@ Les stratégies de déploiement définissent comment les applications sont livr�
 
 Le déploiement direct sur un VPS est une stratégie efficace pour les petits projets ou les applications web simples, offrant une méthode rapide et automatisée pour mettre à jour votre application en production. En utilisant GitHub Actions pour ce processus, vous pouvez minimiser les temps d'arrêt et maximiser l'efficacité de votre flux de travail de déploiement.
 
-## Application Pratique
+## 6.1.3 Application Pratique
 
 Pour appliquer ces stratégies via GitHub Actions, vous utiliserez des workflows qui définissent les étapes de déploiement, incluant des tests, la mise en place de l'environnement et le basculement du trafic. La sélection d'une stratégie dépend de plusieurs facteurs, tels que la tolérance au temps d'arrêt, la capacité à tester en production et la complexité de l'infrastructure.
 
 
 ## Résumé
 
-Les stratégies de déploiement jouent un rôle essentiel dans la gestion efficace et sécurisée des releases d'applications. En vous familiarisant avec les différentes approches et en intégrant celles-ci dans vos workflows GitHub Actions, vous pouvez améliorer la fiabilité et la disponibilité de vos applications lors de leur mise en production.
+Dans ce module, vous avez exploré la variété des stratégies de déploiement disponibles pour automatiser la mise en production de vos applications via GitHub Actions. Chaque stratégie présente des caractéristiques uniques adaptées à différents scénarios de déploiement :
+
+1. **Déploiement Blue/Green** : Vous avez appris comment cette méthode réduit le temps d'arrêt en alternant entre deux environnements de production presque identiques.
+
+2. **Déploiement Canary** : Cette stratégie permet de déployer des changements à un petit groupe d'utilisateurs initialement, ce qui est idéal pour tester les impacts en production avec un risque minimal.
+
+3. **Déploiement Rolling** : Vous avez vu comment les mises à jour progressives peuvent maintenir le service disponible en mettant à jour les serveurs un par un.
+
+4. **Déploiement Direct sur VPS** : Cette approche simple convient parfaitement aux petits projets, permettant des mises à jour directes sur un VPS à chaque push sur une branche spécifique.
+
+En comprenant ces stratégies et en les appliquant à travers des workflows GitHub Actions, vous pouvez choisir la méthode la plus adaptée à vos besoins, améliorant ainsi l'efficacité et la sécurité de vos processus de déploiement. Le choix de la stratégie idéale dépend de plusieurs critères, dont la tolérance au temps d'arrêt, la nécessité de tests en production, et la complexité de votre infrastructure.
+
