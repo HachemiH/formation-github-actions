@@ -1,18 +1,9 @@
-# Gestion et Parallélisation des Jobs
+# Module 4.2 : Gestion et Parallélisation des Jobs
 
-
-<blockquote>
-  <h2>Objectif Pédagogique</h2>
-  <p>À la fin de ce module, l'apprenant sera capable de :</p>
-  <ul>
-    <li>Comprendre et appliquer les principes de gestion des jobs dans un environnement CI/CD en utilisant GitHub Actions, en se concentrant sur la définition d'objectifs clairs pour chaque job et l'orchestration de ces jobs à travers des dépendances explicites.</li>
-    <li>Concevoir des workflows optimisés par la parallélisation des jobs et des tâches, en utilisant des matrices pour exécuter simultanément plusieurs instances d'un job dans différentes conditions, afin de réduire le temps total nécessaire à l'exécution du workflow.</li>
-  </ul>
-</blockquote>
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Pour tirer le meilleur parti de ce module, les apprenants devraient avoir :</p>
+  <p>Pour tirer le meilleur parti de ce module vous devriez avoir :</p>
   <ul>
     <li>Une compréhension de base des concepts d'intégration continue (CI) et de déploiement continu (CD).</li>
     <li>Une familiarité avec GitHub, y compris la création et la gestion de dépôts.</li>
@@ -21,8 +12,18 @@
   </ul>
 </blockquote>
 
+<blockquote>
+  <h2>Objectif Pédagogique</h2>
+  <p>À la fin de ce module vous serez capable de :</p>
+  <ul>
+    <li>Comprendre et appliquer les principes de gestion des jobs dans un environnement CI/CD en utilisant GitHub Actions, en se concentrant sur la définition d'objectifs clairs pour chaque job et l'orchestration de ces jobs à travers des dépendances explicites.</li>
+    <li>Concevoir des workflows optimisés par la parallélisation des jobs et des tâches, en utilisant des matrices pour exécuter simultanément plusieurs instances d'un job dans différentes conditions, afin de réduire le temps total nécessaire à l'exécution du workflow.</li>
+  </ul>
+</blockquote>
 
-## Gestion des Jobs
+
+
+## 4.2.1 Gestion des Jobs
 
 Dans un processus d'intégration et de déploiement continus (CI/CD), la gestion des jobs est essentielle pour orchestrer les différentes tâches nécessaires à la préparation et au déploiement d'une application. Un job peut être vu comme une unité de travail ou une tâche individuelle qui fait partie d'un ensemble plus vaste d'opérations dans un workflow.
 
@@ -70,7 +71,7 @@ Dans cet exemple, le job `test` n'est pas lancé tant que le job `build` n'est p
 En structurant les jobs de cette manière, vous bénéficiez d'une orchestration fluide et logique de vos tâches CI/CD, garantissant que chaque étape est exécutée sur des fondations solides et vérifiées.
 
 
-## Parallélisation des Jobs
+## 4.2.2 Parallélisation des Jobs
 
 La parallélisation implique l'exécution simultanée de multiples jobs ou étapes pour réduire le temps total nécessaire à l'exécution d'un workflow.
 
