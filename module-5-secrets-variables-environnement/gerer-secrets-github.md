@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Pour aborder efficacement ce module, vous devriez avoir :</p>
+  <p>Pour aborder efficacement ce chapitre, vous devriez avoir :</p>
   <ul>
     <li>Une connaissance de base de l'utilisation de GitHub et une compréhension initiale des workflows GitHub Actions.</li>
     <li>Une compréhension élémentaire des principes de sécurité, tels que la connexion sécurisée via SSH, et de l'importance de protéger les informations sensibles.</li>
@@ -12,7 +12,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, vous serez capable de :</p>
+  <p>À la fin de ce chapitre, vous serez capable de :</p>
   <ul>
     <li>Identifier ce que sont les secrets dans le contexte des workflows GitHub Actions et comprendre leur importance pour sécuriser les pipelines CI/CD.</li>
     <li>Démontrer la capacité à ajouter, modifier, et gérer efficacement les secrets au sein de GitHub pour sécuriser les données sensibles utilisées dans les workflows.</li>

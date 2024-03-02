@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Avant de vous lancer dans ce module, vous devriez avoir :</p>
+  <p>Avant de vous lancer dans ce chapitre, vous devriez avoir :</p>
   <ul>
     <li>Une compréhension de base des principes de développement logiciel et du workflow de développement.</li>
     <li>Une familiarité avec l'utilisation de Git et GitHub pour la gestion de versions.</li>
@@ -12,7 +12,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>Après avoir complété ce module, vous serez capable de :</p>
+  <p>Après avoir complété ce chapitre, vous serez capable de :</p>
   <ul>
     <li>Expliquer ce qu'est GitHub Actions et son rôle au sein de l'écosystème GitHub.</li>
     <li>Identifier comment GitHub Actions peut être utilisé pour automatiser les workflows de CI/CD.</li>

@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Avant de commencer ce module, vous devriez être familiarisé avec :</p>
+  <p>Avant de commencer ce chapitre, vous devriez être familiarisé avec :</p>
   <ul>
     <li>Les concepts de base du développement logiciel.</li>
     <li>Une compréhension élémentaire de l'utilisation de Git et GitHub.</li>
@@ -12,7 +12,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, vous serez en mesure de :</p>
+  <p>À la fin de ce chapitre, vous serez en mesure de :</p>
   <ul>
     <li>Comprendre les principes fondamentaux de la CI/CD et leur importance dans le développement logiciel moderne.</li>
     <li>Identifier les étapes clés d'une pipeline CI/CD et leur rôle dans l'assurance de la qualité du code et dans l'efficacité du déploiement.</li>

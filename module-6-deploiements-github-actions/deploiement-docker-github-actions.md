@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Pour suivre ce module, vous devriez avoir :</p>
+  <p>Pour suivre ce chapitre, vous devriez avoir :</p>
   <ul>
     <li>Une compréhension de base de Docker et des conteneurs.</li>
     <li>Une familiarité avec les workflows GitHub Actions.</li>
@@ -12,7 +12,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, vous serez en mesure de :</p>
+  <p>À la fin de ce chapitre, vous serez en mesure de :</p>
   <ul>
     <li>Comprendre les avantages d'utiliser Docker dans le cadre de GitHub Actions pour le déploiement.</li>
     <li>Configurer un workflow GitHub Actions qui utilise Docker pour construire et déployer des applications.</li>

@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Avant de plonger dans ce module, vous devriez être à l'aise avec :</p>
+  <p>Avant de plonger dans ce chapitre, vous devriez être à l'aise avec :</p>
   <ul>
     <li>Les concepts de base du développement logiciel et du workflow de développement.</li>
     <li>Une compréhension initiale de Git pour la gestion de versions.</li>
@@ -12,7 +12,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, vous serez capable de :</p>
+  <p>À la fin de ce chapitre, vous serez capable de :</p>
   <ul>
     <li>Identifier et comprendre le rôle des principaux outils et technologies utilisés dans les processus CI/CD.</li>
     <li>Distinguer les différents types d'outils (gestion de version, serveurs CI, CD, orchestration de conteneurs, monitoring, logging, et SemVer) et savoir quand les utiliser.</li>

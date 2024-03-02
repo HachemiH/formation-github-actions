@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Avant de commencer ce module, vous devriez avoir :</p>
+  <p>Avant de commencer ce chapitre, vous devriez avoir :</p>
   <ul>
     <li>Une compréhension basique de GitHub Actions et de la création de workflows.</li>
     <li>Une familiarité avec les concepts de CI/CD.</li>
@@ -12,7 +12,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, vous serez capable de :</p>
+  <p>À la fin de ce chapitre, vous serez capable de :</p>
   <ul>
     <li>Explorer et sélectionner des Actions dans le GitHub Marketplace pour automatiser vos workflows CI/CD.</li>
     <li>Intégrer efficacement des Actions trouvées sur le Marketplace dans vos fichiers de workflow GitHub Actions.</li>

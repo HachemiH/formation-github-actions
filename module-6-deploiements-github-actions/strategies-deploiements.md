@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Avant de vous lancer dans ce module, il est recommandé que vous ayez :</p>
+  <p>Avant de vous lancer dans ce chapitre, il est recommandé que vous ayez :</p>
   <ul>
     <li>Une solide compréhension des fondamentaux de GitHub Actions, y compris la création et la gestion de workflows.</li>
     <li>Une familiarité avec les concepts de déploiement d'applications, tels que l'intégration continue (CI) et le déploiement continu (CD).</li>
@@ -12,7 +12,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À l'issue de ce module, vous serez capable de :</p>
+  <p>À l'issue de ce chapitre, vous serez capable de :</p>
   <ul>
     <li>Discerner les différentes stratégies de déploiement qui peuvent être intégrées dans un workflow GitHub Actions.</li>
     <li>Évaluer les avantages et les inconvénients de chaque stratégie de déploiement par rapport aux besoins spécifiques de votre projet.</li>

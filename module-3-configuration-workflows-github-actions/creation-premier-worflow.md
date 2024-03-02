@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Avant de commencer ce module, assurez-vous de connaître :</p>
+  <p>Avant de commencer ce chapitre, assurez-vous de connaître :</p>
   <ul>
     <li>Les bases de l'utilisation de GitHub, y compris la création et la gestion de dépôts.</li>
     <li>Une compréhension élémentaire de YAML et de sa syntaxe.</li>
@@ -12,7 +12,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, vous serez capable de :</p>
+  <p>À la fin de ce chapitre, vous serez capable de :</p>
   <ul>
     <li>Créer et configurer un fichier de workflow dans un dépôt GitHub.</li>
     <li>Comprendre et définir les événements déclencheurs pour automatiser les workflows de CI/CD.</li>

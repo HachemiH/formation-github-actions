@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Avant de plonger dans ce module, il est recommandé d'avoir :</p>
+  <p>Avant de plonger dans ce chapitre, il est recommandé d'avoir :</p>
   <ul>
     <li>Une compréhension de base de l'usage et de la navigation sur GitHub.</li>
     <li>Une familiarité avec le concept de l'intégration continue (CI) et du déploiement continu (CD).</li>
@@ -12,7 +12,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>Après avoir terminé ce module, vous serez capable de :</p>
+  <p>Après avoir terminé ce chapitre, vous serez capable de :</p>
   <ul>
     <li>Identifier et décrire les composants clés de GitHub Actions, y compris les workflows, jobs, steps, actions, et runners.</li>
     <li>Comprendre la structure et le fonctionnement des fichiers YAML pour la configuration des workflows GitHub Actions.</li>

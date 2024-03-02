@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Avant de plonger dans ce module, il est recommandé que vous ayez :</p>
+  <p>Avant de plonger dans ce chapitre, il est recommandé que vous ayez :</p>
   <ul>
     <li>Une compréhension solide de l'utilisation de GitHub et des principes fondamentaux des GitHub Actions.</li>
     <li>Des connaissances de base sur les serveurs VPS et les processus de déploiement d'applications web.</li>
@@ -12,7 +12,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À l'issue de ce module, vous serez capable de :</p>
+  <p>À l'issue de ce chapitre, vous serez capable de :</p>
   <ul>
     <li>Discerner les différents niveaux auxquels les variables d'environnement peuvent être définies dans GitHub Actions et leur utilisation optimale.</li>
     <li>Illustrer l'application pratique des variables d'environnement pour orchestrer la configuration de déploiement d'une application web sur un VPS de manière sécurisée.</li>

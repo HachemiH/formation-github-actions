@@ -12,7 +12,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, vous serez capable de :</p>
+  <p>À la fin de ce chapitre, vous serez capable de :</p>
   <ul>
     <li>Configurer un workflow GitHub Actions pour automatiser les réponses aux issues ouvertes dans votre dépôt.</li>
     <li>Utiliser le déclencheur d'événement `issues` pour activer un workflow spécifique.</li>

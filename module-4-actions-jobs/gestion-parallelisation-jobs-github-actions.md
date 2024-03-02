@@ -3,7 +3,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Pour tirer le meilleur parti de ce module vous devriez avoir :</p>
+  <p>Pour tirer le meilleur parti de ce chapitre vous devriez avoir :</p>
   <ul>
     <li>Une compréhension de base des concepts d'intégration continue (CI) et de déploiement continu (CD).</li>
     <li>Une familiarité avec GitHub, y compris la création et la gestion de dépôts.</li>
@@ -14,7 +14,7 @@
 
 <blockquote>
   <h2>Objectif Pédagogique</h2>
-  <p>À la fin de ce module vous serez capable de :</p>
+  <p>À la fin de ce chapitre vous serez capable de :</p>
   <ul>
     <li>Comprendre et appliquer les principes de gestion des jobs dans un environnement CI/CD en utilisant GitHub Actions, en se concentrant sur la définition d'objectifs clairs pour chaque job et l'orchestration de ces jobs à travers des dépendances explicites.</li>
     <li>Concevoir des workflows optimisés par la parallélisation des jobs et des tâches, en utilisant des matrices pour exécuter simultanément plusieurs instances d'un job dans différentes conditions, afin de réduire le temps total nécessaire à l'exécution du workflow.</li>

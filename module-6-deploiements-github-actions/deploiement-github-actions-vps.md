@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Pour optimiser votre apprentissage dans ce module, il est recommandé d'avoir :</p>
+  <p>Pour optimiser votre apprentissage dans ce chapitre, il est recommandé d'avoir :</p>
   <ul>
     <li>Une base solide dans la création et la gestion des workflows GitHub Actions.</li>
     <li>Un accès à un VPS configuré pour les connexions SSH.</li>
@@ -13,7 +13,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>À la fin de ce module, vous serez en mesure de :</p>
+  <p>À la fin de ce chapitre, vous serez en mesure de :</p>
   <ul>
     <li>Configurer un VPS pour recevoir des déploiements automatiques via GitHub Actions.</li>
     <li>Gérer de manière sécurisée des informations sensibles telles que les clés SSH en utilisant les secrets GitHub.</li>

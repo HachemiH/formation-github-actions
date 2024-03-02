@@ -2,7 +2,7 @@
 
 <blockquote>
   <h2>Prérequis</h2>
-  <p>Avant d'aborder ce module, il est recommandé d'avoir :</p>
+  <p>Avant d'aborder ce chapitre, il est recommandé d'avoir :</p>
   <ul>
     <li>Une compréhension de base des workflows GitHub Actions introduits dans les modules précédents.</li>
     <li>Une familiarité avec les concepts de base de Git, notamment les commits, les branches, et les Pull Requests.</li>
@@ -11,7 +11,7 @@
 
 <blockquote>
   <h2>Objectifs Pédagogiques</h2>
-  <p>Après avoir complété ce module, vous serez capable de :</p>
+  <p>Après avoir complété ce chapitre, vous serez capable de :</p>
   <ul>
     <li>Comprendre et utiliser différents types de déclencheurs d'événements pour automatiser les workflows GitHub Actions.</li>
     <li>Configurer des workflows pour réagir à des événements spécifiques tels que les push, les Pull Requests, et les événements planifiés avec la syntaxe cron.</li>
